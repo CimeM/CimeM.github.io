@@ -1,0 +1,10 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://CimeM.github.io
+title: Martin Cimerman
+email: cim.martin@gmail.com
+author: Martin
+description: iOS Developer, UX Engineer, with background in Informatics and Automation, programmer, photographer, tech lover.
+paginate: 3
+google_analytics: UA-78067530-1
