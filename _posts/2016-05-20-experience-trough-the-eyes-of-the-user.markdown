@@ -17,5 +17,4 @@ I would also like to thank my mentor Dejan Križaj for all the support.
 
 ![](https://pbs.twimg.com/media/ChMmEZ5W4AAzAUx.jpg)
 
-Video:
-https://www.youtube.com/watch?v=Ipn6qXdM1Bw&feature=youtu.be
+Video: [Youtube](https://www.youtube.com/watch?v=Ipn6qXdM1Bw&feature=youtu.be)
