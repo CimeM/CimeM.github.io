@@ -21,14 +21,22 @@ Stands between the View and the Model. It is responsible for acquiring the data 
 ![](https://dl.dropboxusercontent.com/s/argf4b0dtchca4r/MVC.png)
 
 The trick is to recognise what each section is for and also how thy communicate: 
-* The controller can always talk to the model 
-* Controller can also talk directly to the View 
-* The model and View should never speak to each other. 
-* Controller hands out an action to the view 
-* The controller sets itself as View’s delegate  
-* Views does not own the data they display 
-* Model uses Radio station model. -> broadcasts info to anyone 
-* Controller can tune in to the Model’s radio station. 
+- The controller can always talk to the model 
+
+- Controller can also talk directly to the View 
+
+- The model and View should never speak to each other. 
+
+- Controller hands out an action to the view 
+
+- The controller sets itself as View’s delegate  
+
+- Views does not own the data they display 
+
+- Model uses Radio station model. -> broadcasts info to anyone 
+
+- Controller can tune in to the Model’s radio station. 
+
 
 The purpose is not only to sort the code, but also making the code more bug prone. Also it enables easy and fast upgrades. 
 
