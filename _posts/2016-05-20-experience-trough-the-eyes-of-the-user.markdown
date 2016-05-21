@@ -1,6 +1,6 @@
 ---
 published: true
-title: Experience trough the eyes of the user
+title: Intuitive gestures and User Experience
 layout: post
 tags: [UX, Software, design, user, raspberry, sparkfun]
 categories: [programming]
