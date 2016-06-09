@@ -17,7 +17,7 @@ A clear representation, is visible in real life.
 - A delegator, which needs to perform a task, but doesn’t have some needed information, resources, or logic to do so. It gets that needed information, resources, or logic from…
 - A delegate. While it typically can’t do what the delegator does, it has the information, resources, or logic that the delegator needs to perform its task.
 
-The delegate pattern in IOS:
+The delegate pattern in iOS:
 
 ![](https://dl.dropboxusercontent.com/s/6qypx1b7lexdxxv/delegate_protocol_2_export-1659-1000.jpg)
 
@@ -32,6 +32,7 @@ Lets go deeper:
 Control-click to any UITextField definition - "jump to definition” will take you to the header file, where you will find all publicly accessible parts of UItextField including the UITextFiledDelegate protocol. you will find it on the bottom of that file 
 
 In order to become a delegate your View controller has to adopt the UITextFieldDelegate protocol. Here is how: 
+
 "class ViewController: UIViewController, UITextFieldDelegate { "
 
 
