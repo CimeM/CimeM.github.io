@@ -31,8 +31,10 @@ this logic is also similar to the one in C. header files are just define the met
 Lets go deeper: 
 Control-click to any UITextField definition - "jump to definition” will take you to the header file, where you will find all publicly accessible parts of UItextField including the UITextFiledDelegate protocol. you will find it on the bottom of that file 
 
-In order to become a delegate your View controller has to adopt the protocol: 
-class ViewController: UIViewController, UITextFieldDelegate { 
+In order to become a delegate your View controller has to adopt the UITextFieldDelegate protocol. Here is how: 
+"class ViewController: UIViewController, UITextFieldDelegate { "
+
+
 
 Methods defined as “optional” you can implement in your delegate. Simply copy the functions name and define it in the ViewController. Giving it the content you control what will happen when the method is called. 
 The job of a developer is to recognise which methods he/she needs and changes them according to the job. For more detailed read check out the globalnerdy.com blog. 
@@ -41,4 +43,3 @@ The job of a developer is to recognise which methods he/she needs and changes th
 Thanx to: 
 http://www.globalnerdy.com
 https://developer.apple.com
-
