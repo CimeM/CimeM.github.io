@@ -7,6 +7,6 @@ CimeM design studio presents:
 
 Inspirated from Slovenian mountain landscapes, making minimal distraction from the content on your phone. Wallpaper was created using Adobe Illustrator.
 
-Wallpaper available for free here: [Dropbox](https://goo.gl/OkAX7G)
+Wallpaper available for free here: [Dropbox](http://dl.dropboxusercontent.com/s/uh27frtua6hs0k2/CimeM-wallpaper-design.jpg)
 
 ![](https://dl.dropboxusercontent.com/s/ynwghv12428z7lx/wpp-promo-insta.png)
