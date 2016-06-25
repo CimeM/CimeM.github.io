@@ -71,14 +71,12 @@ In swift this looks a bit different:
                 self.activityIndicator!.stopAnimating()
                 self.submitButton?.enabled = true
                 self.submitButton?.layer.borderColor = UIColor.blackColor().CGColor
-                self.detectLanguage(self.alphaInputField!.text!, toLanguage: false)
-                self.detectLanguage(self.betaInputField!.text!, toLanguage: true)
             }
         })
 {% endhighlight %}
 
 This code is also triggered with a press of a button, but the translation is saved into a variable.
-
+When CH returns, button becomes active again, and other loading indicators are cleared from the view.
 
 
 Thanks to [https://grokswift.com/completion-handlers-in-swift/](https://grokswift.com/completion-handlers-in-swift/)
