@@ -10,7 +10,7 @@ you can use it for WWW requests. And CH can hide the loading indicator and popul
 Dealing with language translation, my goal was to prepare a program where translated word should be received from the server onto my iOS app. Using [FGTranslator](https://github.com/gpolak/FGTranslator) pod from [Cocoapods](https://cocoapods.org/) for managing the translations, I had to implement CH in Swift. Pod was written in Objective-C, so I created a bridge (bridge.h) and added it to the compiler:
 
 
-{% highlight objectiveC %}
+{% highlight C %}
 #import <FGTranslator/FGTranslator.h>
 #ifndef wordLearning_Bridging_file_h
 #define wordLearning_Bridging_file_h
@@ -21,7 +21,7 @@ Dealing with language translation, my goal was to prepare a program where transl
 
 In objective C translation request looked like this:
 
-{% highlight objectiveC %}
+{% highlight C %}
 - (IBAction)translate:(UIButton *)sender
 {
     [SVProgressHUD show];
