@@ -1,5 +1,6 @@
 excerpt_separator: ""
-pygments: true
+highlighter: rouge
+pygments: 
 markdown: kramdown
 url: http://CimeM.github.io
 title: Martin Cimerman
