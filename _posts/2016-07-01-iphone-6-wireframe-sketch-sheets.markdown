@@ -11,4 +11,4 @@ Dealing with interface mockups requires constant drawing and sketching, and worr
 Placing elements onto the display is easy. With the help of the grid, interfaces can be built faster  and you don't have to worry about proportions or other details that may disturb the work process. The sheet is free for download and is available to everyone. Happy mockup-ing!
 [iphone6_mockup_sheet.pdf](https://dl.dropboxusercontent.com/s/ywhhvegaey0php9/iphone6_mockup_sheet.pdf)
 
-![](https://dl.dropboxusercontent.com/s/3g4k3xkvyzskmki/sctShotInsta.png)
+![](https://dl.dropboxusercontent.com/s/vtnupv3nxf6na1q/sctShotInsta.png)
