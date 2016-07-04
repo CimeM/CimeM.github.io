@@ -5,7 +5,7 @@ layout: post
 ---
 In this lesson, you create the main screen of the Drawing app. You will create a single view app with sketch scene. You will position special buttons that will represent pen settings and accommodate other buttons for interaction. The end result will look like this:
 
-[]{https://dl.dropboxusercontent.com/s/cdajmr77598dokq/finalApp.png}
+![](https://dl.dropboxusercontent.com/s/cdajmr77598dokq/finalApp.png)
 
 Learning Objectives:
 
@@ -19,7 +19,7 @@ Learning Objectives:
 
 Download the pod
 Create a single view project in Xcode (File>New Project). Name it Drawing app.
-[]{https://dl.dropboxusercontent.com/s/mo1i3my2el6et7q/appNaming.png}
+![](https://dl.dropboxusercontent.com/s/mo1i3my2el6et7q/appNaming.png)
 
 Having Cocoapods installed, you can open the terminal and go to the folder your app is saved.
 
@@ -51,7 +51,7 @@ That will take a minute or two.
 Then just close the project in Xcode and open the project in the folder with suffix:   .xcworkspace
 
 Screenshot of the pods installing from terminal:
-[]{https://dl.dropboxusercontent.com/s/00dy8kueqcl1ix1/podInstallTerminal.png}
+![](https://dl.dropboxusercontent.com/s/00dy8kueqcl1ix1/podInstallTerminal.png)
 
 Create an opening scene
 
@@ -96,22 +96,22 @@ The next step is to add a UIView to the Storyboard. Open the Storyboard and find
 Drag the UIView from the library into the canvas of the existing view.
 
 Now edit the size of the UIView. Click on it in your canvas. Then click on the constraints icon and edit the size of the UIView as you see on the image.
-[]{https://dl.dropboxusercontent.com/s/ifym8ax1qbnbhba/UIViewConstrains.png}
+![](https://dl.dropboxusercontent.com/s/ifym8ax1qbnbhba/UIViewConstrains.png)
 
 n the scene view, click on the yellow symbol and remove the warnings with updating the frames. This will stretch the UIView on your canvas according to the rules.
-[]{https://dl.dropboxusercontent.com/s/kogf2gy75g0vcjq/updateFrames.png}
+![](https://dl.dropboxusercontent.com/s/kogf2gy75g0vcjq/updateFrames.png)
 
 If you click onto the canvas, you will see that UIView is stretched all the way to the edges of the canvas(except for the bottom, where the buttons will be).
 
 With the View selected in the canvas navigate to custom Class setting on the right side of the Xcode window and set the properties to :  Class: TouchDrawView and module: TouchDraw
 
-[]{https://dl.dropboxusercontent.com/s/a9onbgq4e437qxz/ClassSettingUIview.png}
+![](https://dl.dropboxusercontent.com/s/a9onbgq4e437qxz/ClassSettingUIview.png)
 
 MARK: set the emulator to your specific device (i chose iPhone 5s) and run the app. If everything is set correctly , compiling should be successful.
 
 With your mouse you can drag onto the white field and you will draw your first sketch :)
 
-[]{https://dl.dropboxusercontent.com/s/mmqu1pgwo2oqapb/firstDrawing.png}
+![](https://dl.dropboxusercontent.com/s/mmqu1pgwo2oqapb/firstDrawing.png)
 
 Drawing Methods
 
@@ -135,7 +135,7 @@ In the main class define an outlet: With control-drag option grab the created UI
 
 You will end up with automatically created outlet:
 
-[]{https://dl.dropboxusercontent.com/s/pt2otk95brg5rxb/drawViewOutlet.png}
+![](https://dl.dropboxusercontent.com/s/pt2otk95brg5rxb/drawViewOutlet.png)
 
 
 {% highlight C %}
@@ -215,7 +215,7 @@ Under that method you also need to define the button methods:
 
 MARK: Compile the app and you should notice the navigation bar at the top.
 You should be able to use undo/redo buttons
-[]{https://dl.dropboxusercontent.com/s/9ktami1o16zba8i/navbarButtonsWorking.png}
+![](https://dl.dropboxusercontent.com/s/9ktami1o16zba8i/navbarButtonsWorking.png)
 
 Pencil buttons
 
@@ -228,7 +228,7 @@ Open Assets.xcassets in the Xcode. add drag the images for buttons available her
 Open the StoryBard and add buttons from elements Library to the bottom of the canvas.
 The first button should be positioned on the left side. All next buttons are the same size (you can alt-drag them)
 Setting the background image to the button will resize it. You have to resize it by hand. Hold shift, so proportions will remain the same. You will end up with the button with the size: 37x68
-[]{https://dl.dropboxusercontent.com/s/qtokjzryfsaeicn/buttonsAddedAndProportions.png}
+![](https://dl.dropboxusercontent.com/s/qtokjzryfsaeicn/buttonsAddedAndProportions.png)
 
 
 At the top, add default color:
@@ -282,7 +282,7 @@ At the bottom of the class add:
 
 Add this actions by control-dragging from the buttons to the main class: View Controller. Don't forget to connect the colour button outlet at the top!
 
-[]{https://dl.dropboxusercontent.com/s/yrjnhfloq8s41yc/connectButtonsToCode.png}
+![](https://dl.dropboxusercontent.com/s/yrjnhfloq8s41yc/connectButtonsToCode.png)
 
 MARK: Run the app and try clicking the buttons on the bottom. The color button will let you select random color every time it is pressed.
 
@@ -290,5 +290,3 @@ Congratulations! Your MVP drawing app is finished!
 
 If you are having trouble with this tutorial, you can always clone the code from my repo here: 
 [Github-DrawingAppTutorial]{https://github.com/CimeM/DrawingAppTutorial}
-
-
