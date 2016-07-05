@@ -223,7 +223,7 @@ Now is the right time to write the pencil button actions.
 
 Open Assets.xcassets in the Xcode. add drag the images for buttons available here: 
 
-[Dropbox-pencils]{https://www.dropbox.com/sh/amfma3u3vlbrxfd/AAAs6CzcUtnRShoEyS5fa70Ca?dl=1}
+[Dropbox-pencils](https://www.dropbox.com/sh/amfma3u3vlbrxfd/AAAs6CzcUtnRShoEyS5fa70Ca?dl=1)
 
 Open the StoryBard and add buttons from elements Library to the bottom of the canvas.
 The first button should be positioned on the left side. All next buttons are the same size (you can alt-drag them)
@@ -289,4 +289,4 @@ MARK: Run the app and try clicking the buttons on the bottom. The color button w
 Congratulations! Your MVP drawing app is finished!
 
 If you are having trouble with this tutorial, you can always clone the code from my repo here: 
-[Github-DrawingAppTutorial]{https://github.com/CimeM/DrawingAppTutorial}
+[Github-DrawingAppTutorial](https://github.com/CimeM/DrawingAppTutorial)
