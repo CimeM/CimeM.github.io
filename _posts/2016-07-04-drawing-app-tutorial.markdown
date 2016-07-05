@@ -5,7 +5,8 @@ layout: post
 ---
 In this lesson, you create the main screen of the Drawing app. You will create a single view app with sketch scene. You will position special buttons that will represent pen settings and accommodate other buttons for interaction. The end result will look like this:
 
-![](https://dl.dropboxusercontent.com/s/cdajmr77598dokq/finalApp.png)
+![](https://dl.dropboxusercontent.com/s/93yk6smi11d4s35/finalAppplusDrawing.png)
+
 
 Learning Objectives:
 
@@ -17,7 +18,7 @@ Learning Objectives:
 
 - Save drawings
 
-Download the pod
+### Download the pod
 Create a single view project in Xcode (File>New Project). Name it Drawing app.
 ![](https://dl.dropboxusercontent.com/s/mo1i3my2el6et7q/appNaming.png)
 
@@ -53,7 +54,7 @@ Then just close the project in Xcode and open the project in the folder with suf
 Screenshot of the pods installing from terminal:
 ![](https://dl.dropboxusercontent.com/s/00dy8kueqcl1ix1/podInstallTerminal.png)
 
-Create an opening scene
+### Create an opening scene
 
 In xcode, open ViewController.swift.
 
@@ -98,7 +99,7 @@ Drag the UIView from the library into the canvas of the existing view.
 Now edit the size of the UIView. Click on it in your canvas. Then click on the constraints icon and edit the size of the UIView as you see on the image.
 ![](https://dl.dropboxusercontent.com/s/ifym8ax1qbnbhba/UIViewConstrains.png)
 
-n the scene view, click on the yellow symbol and remove the warnings with updating the frames. This will stretch the UIView on your canvas according to the rules.
+In the scene view, click on the yellow symbol and remove the warnings with updating the frames. This will stretch the UIView on your canvas according to the rules.
 ![](https://dl.dropboxusercontent.com/s/kogf2gy75g0vcjq/updateFrames.png)
 
 If you click onto the canvas, you will see that UIView is stretched all the way to the edges of the canvas(except for the bottom, where the buttons will be).
@@ -113,7 +114,7 @@ With your mouse you can drag onto the white field and you will draw your first s
 
 ![](https://dl.dropboxusercontent.com/s/mmqu1pgwo2oqapb/firstDrawing.png)
 
-Drawing Methods
+### Drawing Methods
 
 Create methods into the main ViewController class for drawing onto the canvas:
 
@@ -217,7 +218,7 @@ MARK: Compile the app and you should notice the navigation bar at the top.
 You should be able to use undo/redo buttons
 ![](https://dl.dropboxusercontent.com/s/9ktami1o16zba8i/navbarButtonsWorking.png)
 
-Pencil buttons
+### Pencil buttons
 
 Now is the right time to write the pencil button actions.
 
@@ -286,7 +287,8 @@ Add this actions by control-dragging from the buttons to the main class: View Co
 
 MARK: Run the app and try clicking the buttons on the bottom. The color button will let you select random color every time it is pressed.
 
-Congratulations! Your MVP drawing app is finished!
+### Congratulations! Your MVP Drawing app is finished!
 
 If you are having trouble with this tutorial, you can always clone the code from my repo here: 
+
 [Github-DrawingAppTutorial](https://github.com/CimeM/DrawingAppTutorial)
