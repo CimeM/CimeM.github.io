@@ -292,3 +292,6 @@ MARK: Run the app and try clicking the buttons on the bottom. The color button w
 If you are having trouble with this tutorial, you can always clone the code from my repo here: 
 
 [Github-DrawingAppTutorial](https://github.com/CimeM/DrawingAppTutorial)
+
+Please notice, that this app is not ready for shipment! You are welcome to modify it in your own way.
+ 
