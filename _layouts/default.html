@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description | strip_html }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
-    <meta property="og:image" content="https://dl.dropboxusercontent.com/s/orivwuu0dt40mdv/cover-photo.jpg" />
+    <meta name="og:image" content="https://dl.dropboxusercontent.com/s/orivwuu0dt40mdv/cover-photo.jpg" />
     {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
