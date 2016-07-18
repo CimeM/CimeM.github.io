@@ -76,7 +76,7 @@ You should end up with your app. Open Settings of your app and add a platform.
 
 You should be able to select iOS app. Then insert your Bundle ID, which is available in Xcode:
 
-![](https://dl.dropboxusercontent.com/s/cortcw1z3pdmh37/bundleID%20xcode.png)
+![](https://dl.dropboxusercontent.com/s/4edngr9y67p66iu/bundleID%20xcode.png)
 
 
 Flip the switch for 'Single Sign On' option. 
