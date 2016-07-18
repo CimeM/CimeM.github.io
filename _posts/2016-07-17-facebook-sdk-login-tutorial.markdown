@@ -5,7 +5,7 @@ layout: post
 ---
 In this lesson, you will create an app that connects to your Facebook account. You will be able to connect (log in) to your account on Facebook. And retrieve some basic information from your profile.
 
-[](https://dl.dropboxusercontent.com/s/nsxmaw6ouftry2i/finalAppFacebookLogin.png)
+![](https://dl.dropboxusercontent.com/s/nsxmaw6ouftry2i/finalAppFacebookLogin.png)
 
 Learning Objectives:
 
@@ -64,21 +64,19 @@ When finished, open the .xcworkspace file with Xcode.
 MARK: Compile your app ad run it in the simulator. It should compile without a problem.
 
 
-
-
 Create facebook app.
 Navigate to facebook developer site : https://developers.facebook.com , and find a button where you can create new App ID.
 
-[](https://dl.dropboxusercontent.com/s/9rly2lsr7di1x4o/facebookdeveloper%20new%20app%20ID.png). This tutorial will not cover the whole process because facebook may change its procedure over time.
+![](https://dl.dropboxusercontent.com/s/9rly2lsr7di1x4o/facebookdeveloper%20new%20app%20ID.png). This tutorial will not cover the whole process because facebook may change its procedure over time.
 
 
 You should end up with your app. Open Settings of your app and add a platform.
 
-[](https://dl.dropboxusercontent.com/s/00p7yxa1xbsu796/facebook%20new%20platform.png)
+![](https://dl.dropboxusercontent.com/s/00p7yxa1xbsu796/facebook%20new%20platform.png)
 
 You should be able to select iOS app. Then insert your Bundle ID, which is available in Xcode:
 
-[](https://dl.dropboxusercontent.com/s/cortcw1z3pdmh37/bundleID%20xcode.png)
+![](https://dl.dropboxusercontent.com/s/cortcw1z3pdmh37/bundleID%20xcode.png)
 
 
 Flip the switch for 'Single Sign On' option. 
@@ -192,16 +190,13 @@ If you take a closer look you will see that method 'fetchToken()' is responsible
 
 After clicking the button, a browser will display a confirmation screen - you can see your app that you registered at the beginning. mine is 'Schamar'.
 
-[](https://dl.dropboxusercontent.com/s/nqjy667yqtr4me5/simulator%20screenshot%20asking%20for%20approval.png)
+![](https://dl.dropboxusercontent.com/s/nqjy667yqtr4me5/simulator%20screenshot%20asking%20for%20approval.png)
 
 When successfully logged in you will see a button showing you : Log out:
-[](https://dl.dropboxusercontent.com/s/90emjiloy07u999/simulator%20fb%20button%20log%20out.png)
+![](https://dl.dropboxusercontent.com/s/90emjiloy07u999/simulator%20fb%20button%20log%20out.png)
 
 In iOS 9, you are prompt to confirm your logout action.
-[](https://dl.dropboxusercontent.com/s/lauyr7pqnnvxmay/confirmation%20screen%20emulator%20log%20ou%20from%20facebook.png)
+![](https://dl.dropboxusercontent.com/s/lauyr7pqnnvxmay/confirmation%20screen%20emulator%20log%20ou%20from%20facebook.png)
 
 The log window will display your name, as it is written in the code.
-[](https://dl.dropboxusercontent.com/s/zsbbiuvs5n4dn9s/log%20facebook%20retrieving%20name.png)
-
-
-
+![](https://dl.dropboxusercontent.com/s/zsbbiuvs5n4dn9s/log%20facebook%20retrieving%20name.png)
