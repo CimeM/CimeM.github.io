@@ -190,13 +190,13 @@ If you take a closer look you will see that method 'fetchToken()' is responsible
 
 After clicking the button, a browser will display a confirmation screen - you can see your app that you registered at the beginning. mine is 'Schamar'.
 
-![](https://dl.dropboxusercontent.com/s/nqjy667yqtr4me5/simulator%20screenshot%20asking%20for%20approval.png)
+![](https://dl.dropboxusercontent.com/s/9lcsf2f0zicdjjs/simulator-screenshot-asking-for-approval.png)
 
 When successfully logged in you will see a button showing you : Log out:
 ![](https://dl.dropboxusercontent.com/s/90emjiloy07u999/simulator%20fb%20button%20log%20out.png)
 
 In iOS 9, you are prompt to confirm your logout action.
-![](https://dl.dropboxusercontent.com/s/lauyr7pqnnvxmay/confirmation%20screen%20emulator%20log%20ou%20from%20facebook.png)
+![](https://dl.dropboxusercontent.com/s/ycc5uxqsjiu2w4p/confirmation-screen-emulator-log-ou-from-facebook.png)
 
 The log window will display your name, as it is written in the code.
 ![](https://dl.dropboxusercontent.com/s/zsbbiuvs5n4dn9s/log%20facebook%20retrieving%20name.png)
