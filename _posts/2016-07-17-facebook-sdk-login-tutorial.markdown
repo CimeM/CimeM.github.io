@@ -193,7 +193,7 @@ After clicking the button, a browser will display a confirmation screen - you ca
 ![](https://dl.dropboxusercontent.com/s/9lcsf2f0zicdjjs/simulator-screenshot-asking-for-approval.png)
 
 When successfully logged in you will see a button showing you : Log out:
-![](https://dl.dropboxusercontent.com/s/90emjiloy07u999/simulator%20fb%20button%20log%20out.png)
+![](https://dl.dropboxusercontent.com/s/7jin8qxk701bvoq/simulator-fb-button-log-out.png)
 
 In iOS 9, you are prompt to confirm your logout action.
 ![](https://dl.dropboxusercontent.com/s/ycc5uxqsjiu2w4p/confirmation-screen-emulator-log-ou-from-facebook.png)
