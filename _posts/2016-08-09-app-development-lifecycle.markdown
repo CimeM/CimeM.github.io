@@ -3,7 +3,7 @@ published: true
 title: App development lifecycle
 layout: post
 ---
-This article covers the basic steps how you can shapr your app idea. This covers  the situation where you already have the idea and are up to build an app. This means you already did the market research, you have talked to customers about the idea, considered your business model, defined your value proposition.
+This article covers the basic steps how you can shape your app idea. This covers  the situation where you already have the idea and are up to build an app. This means you already did the market research, you have talked to customers about the idea, considered your business model, defined your value proposition.
 
 Chances are you dont have app development services available in-house to understand the procedure.
 
