@@ -5,8 +5,6 @@ layout: post
 ---
 This article covers the basic steps how you can shape your app idea. This covers  the situation where you already have the idea and are up to build an app. This means you already did the market research, you have talked to customers about the idea, considered your business model, defined your value proposition.
 
-Chances are you dont have app development services available in-house to understand the procedure.
-
 This steps is shaped and used in many app development service providers to build apps, and is proclaimed to be the most efficient way towards your goal. The goal here is not the app but the service you are planing to release.
 
 This article is for those who do not yet understand the process of building the apps and would like to get up to speed.
