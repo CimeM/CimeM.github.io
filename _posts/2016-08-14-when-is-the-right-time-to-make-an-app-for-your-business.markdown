@@ -7,7 +7,7 @@ If you are planning to establish a mobile presence with your customers, you have
 
 ![](https://dl.dropboxusercontent.com/s/s1okx31ksz568ps/cover.jpg)
 
-What is the difference between a mobile website and mobile app?
+## What is the difference between a mobile website and mobile app?
 A mobile website is similar to any other website. Written with web-based languages, it will behave as a website. Accessible over the internet, its content will be transferred over (3G, LTE or WiFi) and displayed on a smaller screen within the limited browser environment.
 
 With a mobile website, you are limited to the content you can use on any website: Text, image, video, linked connections, addresses etc.
