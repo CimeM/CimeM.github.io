@@ -19,7 +19,7 @@ With apps however, you can do more than that. Applications are powerful software
 ## When is the right time to build an app?
 
 
-The decision to build an app comes from your end goals. It's obvious that games should be built as an app and not as a website. But if your plan is to provide mobile-compatible content to the widest possible audience a website is the option for you. Needless to say that not every case is the same, it is your understanding of your customers needs and your goals to provide the best options for your customers, which will influence your desidion.
+The decision to build an app comes from your end goals. It's obvious that games should be built as an app and not as a website. But if your plan is to provide mobile-compatible content to the widest possible audience a website is the option for you. Needless to say that not every case is the same, it is your understanding of your customers needs and your goals to provide the best options for your customers, which will influence your decision.
 
 
 A mobile website should be considered first, before deciding for an app. Apps are made for a specific purpose and usually, cover what browsers can't.
