@@ -10,10 +10,10 @@ If you are planning to establish a mobile presence with your customers, you have
 ## What is the difference between a mobile website and mobile app?
 A mobile website is similar to any other website. Written with web-based languages, it will behave as a website. Accessible over the internet, its content will be transferred over (3G, LTE or WiFi) and displayed on a smaller screen within the limited browser environment.
 
-With a mobile website, you are limited to the content you can use on any website: Text, image, video, linked connections, addresses etc.
+A mobile website is really good for bringing text /images contet to a mobile display really fast. But the advantage is ita biggest dissatvantage. With a mobile website, you are limited to the content you can use on any website: Text, image, video, linked connections, addresses etc., you can not do much more than that. 
 
 
-With apps, you can do more than that. Applications are powerful software based programs, that can run on your customers devices. Downloaded from the App store, Google play store or other, they deliver the most personalised experience.
+With apps however, you can do more than that. Applications are powerful software based programs, that can run on your customers devices. Downloaded from the App store, Google play store or other, they deliver the most personalised experience.
 
 
 ## When is the right time to build an app?
