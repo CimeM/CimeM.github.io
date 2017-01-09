@@ -21,4 +21,17 @@ Applications like maps and contact forms were introduced into the site to attain
 Addition to the website was a site for annual events - Marathons. These events happen twice a year and information is due to be changed respectively.  
 
 
+Brand assets
+
+The logo is a rounded blue circle with organization's name falling out on both sides. We didn't put the logo on the site but it is included several times along the page, one being the wallpaper on the index page.
+
+
+Navbar has a gradient of lighter red (#892C3B) to darker red (#69212d). Darker grayscale image with vinjeting effect and white text ontop foms an identical configuration as the official page.
+
+Font was easy. Its Arial. This time old font shows a classic approach to branding.
+
+Footer, social media icons and that 4 column design were replaced with newer and cleaner items. Footer is white, social media icons dark grey and equiped with 3 column design. 
+ 
+
+
 You can check the site at [http://www.toastmasters.si/](http://www.toastmasters.si/)
