@@ -3,7 +3,7 @@ published: true
 title: Toastmasters Ljubljana webpage
 layout: post
 ---
-Website of Toastmasters Ljubljana represents a local community within the group of international group of other communities. Toastmasters International already selected its signature branding. Apparent in their magazine, workbooks and of course, the website, it gives a clear guideline to all other entities. Not stepping out of their agenda, the new website has the same colour palette and similar UX. 
+Toastmasters Ljubljana a part of the international network of non profit edu organization. Toastmasters International already selected its signature branding. Apparent in their magazine, workbooks and of course, the website, it gives a clear guideline to all other entities. Not stepping out of their agenda, the new website has the same outline, colour palette and similar UX. 
 Communication with the board revealed the trouble points which a modern website could solve. Problem-solving approach yield multiple sets of instructions, advanced tools and connections  within the twitter bootstrap framework design. A careful approach revealed very little maintenance subjects. 
 
 
@@ -18,7 +18,7 @@ Applications like maps and contact forms were introduced into the site to attain
 ![](https://dl.dropboxusercontent.com/s/gydq9pgpe7tm7sj/contact_site_TMLJ.png)
 
 
-Addition to the site was a site for annual events - Marathons. These events happen twice a year information on these sites changes respectively.  
+Addition to the website was a site for annual events - Marathons. These events happen twice a year and information is due to be changed respectively.  
 
 
 You can check the site at [http://www.toastmasters.si/](http://www.toastmasters.si/)
