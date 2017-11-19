@@ -9,3 +9,5 @@ author: Martin
 description: iOS Developer, UX Engineer, with background in Informatics and Automation, programmer, photographer, tech lover.
 paginate: 6
 google_analytics: UA-78067530-1
+
+theme: jekyll-theme-cayman
