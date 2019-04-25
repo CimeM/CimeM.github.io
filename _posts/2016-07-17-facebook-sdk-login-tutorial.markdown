@@ -1,8 +1,16 @@
 ---
-published: true
-title: Facebook SDK Login tutorial
 layout: post
+current: post
+cover:  assets/images/william-iven-19844-unsplash.jpg
+navigation: True
+title: Facebook SDK Login tutorial
+date: 2016-07-17 10:00:00
+tags: software
+class: post-template
+subclass: 'Facebook SDK tutorial App iOS'
+author: martin
 ---
+
 In this lesson, you will create an app that connects to your Facebook account. You will be able to connect (log in) to your account on Facebook. And retrieve some basic information from your profile.
 
 ![](https://dl.dropboxusercontent.com/s/nsxmaw6ouftry2i/finalAppFacebookLogin.png)
@@ -79,7 +87,7 @@ You should be able to select iOS app. Then insert your Bundle ID, which is avail
 ![](https://dl.dropboxusercontent.com/s/4edngr9y67p66iu/bundleID%20xcode.png)
 
 
-Flip the switch for 'Single Sign On' option. 
+Flip the switch for 'Single Sign On' option.
 Don't close the page, because you will need to copy the Application ID soon.
 
 

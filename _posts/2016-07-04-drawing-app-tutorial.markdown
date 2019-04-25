@@ -1,8 +1,16 @@
 ---
-published: true
-title: Drawing App Tutorial
 layout: post
+current: post
+cover:  assets/images/drawing-app.jpg
+navigation: True
+title: Create your own drawing app
+date: 2017-11-28 10:00:00
+tags: software
+class: post-template
+subclass: 'post coding app drawing time timing'
+author: martin
 ---
+
 In this lesson, you create the main screen of the Drawing app. You will create a single view app with sketch scene. You will position special buttons that will represent pen settings and accommodate other buttons for interaction. The end result will look like this:
 
 ![](https://dl.dropboxusercontent.com/s/93yk6smi11d4s35/finalAppplusDrawing.png)
@@ -222,7 +230,7 @@ You should be able to use undo/redo buttons
 
 Now is the right time to write the pencil button actions.
 
-Open Assets.xcassets in the Xcode. add drag the images for buttons available here: 
+Open Assets.xcassets in the Xcode. add drag the images for buttons available here:
 
 [Dropbox-pencils](https://www.dropbox.com/sh/amfma3u3vlbrxfd/AAAs6CzcUtnRShoEyS5fa70Ca?dl=1)
 
@@ -289,9 +297,8 @@ MARK: Run the app and try clicking the buttons on the bottom. The color button w
 
 ### Congratulations! Your MVP Drawing app is finished!
 
-If you are having trouble with this tutorial, you can always clone the code from my repo here: 
+If you are having trouble with this tutorial, you can always clone the code from my repo here:
 
 [Github-DrawingAppTutorial](https://github.com/CimeM/DrawingAppTutorial)
 
 Please notice, that this app is not ready for shipment! You are welcome to modify it in your own way.
- 

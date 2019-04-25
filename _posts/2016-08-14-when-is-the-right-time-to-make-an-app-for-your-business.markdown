@@ -1,8 +1,16 @@
 ---
-published: true
-title: When is the right time to make an app for your business?
 layout: post
+current: post
+cover:  assets/images/youssef-sarhan-470786-unsplash.jpg
+navigation: True
+title: When is the right time to make a native app for my business?
+date: 2017-11-28 10:00:00
+tags: software
+class: post-template
+subclass: 'post app business time timing'
+author: martin
 ---
+
 If you are planning to establish a mobile presence with your customers, you have probably come across two options: Mobile website and Mobile Application (App). They both look very similar at first glance but actually differ quite a lot. The intended purpose is to consider everything before making a decision. Your users will notice, so it's worth spending the time to make the right one.
 
 ![](https://dl.dropboxusercontent.com/s/s1okx31ksz568ps/cover.jpg)
@@ -10,7 +18,7 @@ If you are planning to establish a mobile presence with your customers, you have
 ## What is the difference between a mobile website and mobile app?
 A mobile website is similar to any other website. Written with web-based languages, it will behave as a website. Accessible over the internet, its content will be transferred over (3G, LTE or WiFi) and displayed on a smaller screen within the limited browser environment.
 
-A mobile website is really good for bringing text /images content to a mobile display really fast. But the advantage is its biggest dissadvantage. With a mobile website, you are limited to the content you can use on any website: Text, image, video, linked connections, addresses etc., you can not do much more than that. 
+A mobile website is really good for bringing text /images content to a mobile display really fast. But the advantage is its biggest dissadvantage. With a mobile website, you are limited to the content you can use on any website: Text, image, video, linked connections, addresses etc., you can not do much more than that.
 
 
 With apps however, you can do more than that. Applications are powerful software based programs, that can run on your customers devices. Downloaded from the App store, Google play store or other, they deliver the most personalised experience.

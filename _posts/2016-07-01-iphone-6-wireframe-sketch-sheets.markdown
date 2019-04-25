@@ -1,9 +1,17 @@
 ---
-published: true
-title: iPhone 6 wireframe Sketch Sheets
 layout: post
+current: post
+cover:  assets/images/ana-bernardo-185037-unsplash.jpg
+navigation: True
+title: Free iPhone 6 wireframe Sketch Sheets
+date: 2016-07-1 10:00:00
+tags: 
+class: post-template
+subclass: 'iPhone design illustration Apple'
+author: martin
 ---
-Iterating ideas requires time. To squeeze every minute out of our workdays we have to be fast. 
+
+Iterating ideas requires time. To squeeze every minute out of our workdays we have to be fast.
 
 
 Dealing with interface mockups requires constant drawing and sketching, and worrying to draw the screen appropriate proportions when explaining the idea  just isn't right. So, I prepared a special grid with smartphone outlines to be printed and used for this soul purpose.

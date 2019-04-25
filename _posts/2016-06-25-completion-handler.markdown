@@ -1,8 +1,16 @@
 ---
-published: true
-title: Completion handler
 layout: post
+current: post
+cover:  assets/images/theGoal-novel.jpg
+navigation: True
+title: Completion handler
+date: 2016-06-25 10:00:00
+tags: software
+class: post-template
+subclass: 'post coding app'
+author: martin
 ---
+
 Completion handlers(CH) are convenient for requests, that might take some time before returning a value. CH is used to activate action when the request returns a response.
 
 you can use it for WWW requests. And CH can hide the loading indicator and populate the screen with fresh content.

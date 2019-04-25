@@ -1,8 +1,16 @@
 ---
-published: true
-title: Table wiew - using pre-defined details
 layout: post
+current: post
+cover:  assets/images/CTV_newtableview_2x.jpg
+navigation: True
+title: Table wiew - using pre-defined details
+date: 2016-06-04 10:00:00
+tags: software
+class: post-template
+subclass: 'post tag-getting-started MVC swift iOS OSX apple dev development code programmming'
+author: martin
 ---
+
 Table view is one of predefined views, you can use, if you want to show a list of items. One of the things, worth mentioning is that there are predefined details we, as developers can take advantage detail of.
 
 If you have build a table view, and want to construct a cell with an image, a title and a detail text. You can use a predefined layout which came with Xcode. I discovered this by accident and saved me a lot of time when creating an app with list view, where an image and 2 types of text had to be displayed.
@@ -17,7 +25,7 @@ cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "c
         cell.detailTextLabel!.text = "some detail text"
         cell.imageView?.image = UIImage(named: "SampleCoverImge")
 
- 
+
 Be sure to create a cover image named "SampleCoverImage.jpg" and save it into Xcode.
 
 Result:

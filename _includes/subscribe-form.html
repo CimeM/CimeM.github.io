@@ -1,0 +1,10 @@
+<form method="post" action="https://whynots.us13.list-manage.com/subscribe/post?u=ee872700cfb3a88039c9f128b&amp;id=8c55ac20a5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="EMAIL"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" {% if site.subscribers %} enabled {% else %} disabled {% endif %}><span>Subscribe</span></button>
+    
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>

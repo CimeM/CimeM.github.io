@@ -1,8 +1,16 @@
 ---
-published: true
-title: App development lifecycle
 layout: post
+current: post
+cover:  assets/images/bernard-hermant-612164-unsplash.jpg
+navigation: True
+title: Apps, from idea to conception
+date: 2016-08-09 10:00:00
+tags: software
+class: post-template
+subclass: 'post coding app business time timing'
+author: martin
 ---
+
 This article covers the basic steps how you can shape your app idea. This covers  the situation where you already have the idea and are up to build an app. This means you already did the market research, you have talked to customers about the idea, considered your business model, defined your value proposition.
 
 This steps is shaped and used in many app development service providers to build apps, and is proclaimed to be the most efficient way towards your goal. The goal here is not the app but the service you are planing to release.
@@ -13,7 +21,7 @@ This article is for those who do not yet understand the process of building the 
 ![](https://dl.dropboxusercontent.com/s/vtnupv3nxf6na1q/sctShotInsta.png)
 
 
-Here are the steps: 
+Here are the steps:
 
 
 1. Project planning

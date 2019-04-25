@@ -1,8 +1,16 @@
 ---
-published: true
-title: The delegate pattern
 layout: post
+current: post
+cover:  assets/images/ricardo-gomez-angel-204573-unsplash.jpg
+navigation: True
+title: The delegate pattern
+date: 2016-06-21 10:00:00
+tags: software
+class: post-template
+subclass: 'programming App pattern iPhone'
+author: martin
 ---
+
 In general, this pattern was adopted by iOS developers very early and it has become a fundamental part of iOS development. Often interaction is guaranteed when dealing with user interfaces in iOS. The point of this pattern is that it allows you to easily handle/customise the behaviour of several objects in one central objects.
 
 Wiki:
@@ -21,26 +29,26 @@ The delegate pattern in iOS:
 
 ![](https://dl.dropboxusercontent.com/s/6qypx1b7lexdxxv/delegate_protocol_2_export-1659-1000.jpg)
 
-This example shows the text field UI element. This delegator has the power to know when the user starts and stops editing the text in the field, what characters can be inserted etc. … They give the job to the delegate. 
+This example shows the text field UI element. This delegator has the power to know when the user starts and stops editing the text in the field, what characters can be inserted etc. … They give the job to the delegate.
 
-A specific protocol UITextFieldDelegate protocol acts as the connection between the text field and its delegate. The protocol only initialises the methods, and the delegate has to conform to these rules and implement or “adopt” the methods. 
+A specific protocol UITextFieldDelegate protocol acts as the connection between the text field and its delegate. The protocol only initialises the methods, and the delegate has to conform to these rules and implement or “adopt” the methods.
 
-this logic is also similar to the one in C. header files are just define the methods later defined in the files which import the header files. 
+this logic is also similar to the one in C. header files are just define the methods later defined in the files which import the header files.
 
 
-Let's go deeper: 
-Control-click to any UITextField definition - "jump to definition” will take you to the header file, where you will find all publicly accessible parts of UItextField including the UITextFiledDelegate protocol. you will find it on the bottom of that file 
+Let's go deeper:
+Control-click to any UITextField definition - "jump to definition” will take you to the header file, where you will find all publicly accessible parts of UItextField including the UITextFiledDelegate protocol. you will find it on the bottom of that file
 
-In order to become a delegate, your View controller has to adopt the UITextFieldDelegate protocol. Here is how: 
+In order to become a delegate, your View controller has to adopt the UITextFieldDelegate protocol. Here is how:
 
 "class ViewController: UIViewController, UITextFieldDelegate { "
 
 
 
-Methods defined as “optional” you can implement in your delegate. Simply copy the functions name and define it in the ViewController. Giving it the content you control what will happen when the method is called. 
-The job of a developer is to recognise which methods he/she needs and changes them according to the job. For more detailed read check out the globalnerdy.com blog. 
+Methods defined as “optional” you can implement in your delegate. Simply copy the functions name and define it in the ViewController. Giving it the content you control what will happen when the method is called.
+The job of a developer is to recognise which methods he/she needs and changes them according to the job. For more detailed read check out the globalnerdy.com blog.
 
 
-Thanx to: 
+Thanx to:
 http://www.globalnerdy.com
 https://developer.apple.com
