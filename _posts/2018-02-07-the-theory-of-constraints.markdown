@@ -15,7 +15,7 @@ You have probably seen a factory before. You probably drove by one today. From t
 
 I was lucky enough to work at a factory before i even graduated. It was a paper plant. They shipped in cellulose and turn it into paper for all sorts of labels. But all the knowledge about technical part of the plant didn’t prepare me for the Theory of constraints.
 
-While engineers worry about how machines operate and their health status, upper management deals with the operations process like the throughput maximisation, efficiency, profitability. For a young engineer these terms sound like meaningless words, they actually consider the future of the plant itself. This was a great opportunity for me, to sit on a managers chair and observe the process, while consuming the information and making sense of it.
+While engineers worry about how machines operate and their health status, upper management deals with the operations process like the throughput maximization, efficiency, profitability. For a young engineer these terms sound like meaningless words, they actually consider the future of the plant itself. This was a great opportunity for me, to sit on a managers chair and observe the process, while consuming the information and making sense of it.
 
 This article was created as a research piece to the theory of Constraints proposed by Eliyahu M. Goldratt & Jef Cox in the book "The Goal”. And at the same time apply the knowledge to a simulation that considers management perspective as the main driver to reach the goal. The simulation is actually a strategic game that involves people, their motivations and as well considers tangible assets as a goal.
 

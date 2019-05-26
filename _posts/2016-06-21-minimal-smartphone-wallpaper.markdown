@@ -5,10 +5,11 @@ cover:  assets/images/wpp-promo-insta.png
 navigation: True
 title: Minimal smartphone wallpaper
 date: 2016-06-21 10:00:00
-tags: 
+tags:
 class: post-template
 subclass: 'iPhone design illustration wallpaper'
 author: martin
+published: false
 ---
 
 CimeM design studio presents:

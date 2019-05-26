@@ -5,10 +5,11 @@ cover:  assets/images/ana-bernardo-185037-unsplash.jpg
 navigation: True
 title: Free iPhone 6 wireframe Sketch Sheets
 date: 2016-07-1 10:00:00
-tags: 
+tags:
 class: post-template
 subclass: 'iPhone design illustration Apple'
 author: martin
+published: false
 ---
 
 Iterating ideas requires time. To squeeze every minute out of our workdays we have to be fast.

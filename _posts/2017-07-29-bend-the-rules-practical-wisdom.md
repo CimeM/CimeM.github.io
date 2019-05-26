@@ -5,10 +5,11 @@ cover:  assets/images/kiwihug-284614-unsplash.jpg
 navigation: True
 title: Bend the rules - practical wisdom
 date: 2017-07-29 10:00:00
-tags: 
+tags:
 class: post-template
 subclass: 'post solar energy home saving'
 author: martin
+published: false
 ---
 
 

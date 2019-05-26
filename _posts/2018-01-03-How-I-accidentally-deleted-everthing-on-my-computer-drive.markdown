@@ -9,6 +9,7 @@ tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'
 author: martin
+published: false
 ---
 
 If you have a computer it's obvious you store your birthday photos, videos and project files on the disk drive. If your drive would get erased, you would probably regret not having a copy of it. All those memories of you wearing those funny sox would be lost forever. All those things represent everything we did over time, where we've been and what we wore. It is valuable to us, not just personally, but professionally as well. For some their computer, their phone is where they store all that information, losing it would spell a catastrophe. It did happen to me and I recovered from it using data clouds.

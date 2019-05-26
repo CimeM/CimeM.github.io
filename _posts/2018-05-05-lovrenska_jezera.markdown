@@ -9,6 +9,7 @@ tags: trip environment
 class: post-template
 subclass: 'post travel visit trip getaway'
 author: martin
+published: false
 ---
 
 Lovrenška lakes are a paradise to those who are looking for preserved natural wonders in Slovenia. At the end of April, my friends and I packed the car and left to see them. In the middle of Pohorje between Rogla and Ribiško Pohorje, several lakes fill the area of 54 acres. Accumulated by meteor waters only and surrounded by waste - sized bushes. The area is a swamp, so there are wooden trails built to and around the landmarks.  

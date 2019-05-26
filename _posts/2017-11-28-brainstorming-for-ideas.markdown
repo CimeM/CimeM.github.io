@@ -10,6 +10,7 @@ class: post-template
 subclass: 'post ideas brainstorming'
 published: false
 author: martin
+published: false
 ---
 
 
