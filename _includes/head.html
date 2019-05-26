@@ -1,6 +1,6 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <link rel="shortcut icon" href="{{ site.url }}{{ '/' | relative_url }}{{ site.favicon }}" type="image/png" />
-    <link rel="canonical" href="{{ site.url }}{% if '/' | relative_url %}{{ '/' | relative_url }}{% endif %}{{ page.url | remove_first: '/' }}" />
+    <link rel="canonical" href="{{ site.url }}{% if relative_url %}{{ '/' | relative_url }}{% endif %}{{ page.url | remove_first: '/' }}" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     {% if page.content and page.current == 'post' or page.current == 'about' %}

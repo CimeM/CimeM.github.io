@@ -4,7 +4,7 @@ ghost:
   url_full: http://jekyller.github.io/jasper2/
   url: jekyller.github.io/jasper2
   bio: The professional publishing platform
-  picture: /assets/images/ghost.png
+  picture: assets/images/ghost.png
   facebook: ghost
   twitter: tryghost
   cover: False
@@ -12,7 +12,7 @@ martin:
   username: martin
   name: Martin Cimerman
   location: Ljubljana, SI
-  url_full: https://www.martincimerman.dev/
+  url_full: https://martincimerman.dev/
   url: martincimerman.dev
   bio: Software engineer at heart, enjoys sports and travelling. During high school, he worked as an automation engineer in the industrial world. Later he joined software and hardware-based companies working on automation, data processing and web-based applications. He finished his master's degree as automation and Informatics engineer, continuing as a systems engineer. He is involved in volunteering and sports activities.
   picture: assets/images/martin.jpg
