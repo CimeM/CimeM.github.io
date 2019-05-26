@@ -11,10 +11,10 @@ baseurl: /
 # Website info
 title: martincimerman.dev
 description: DevOps, data and automation
-cover: /assets/images/blog-cover.jpg
-logo: /assets/images/blog-icon.png
-logo_dark: /assets/images/favicon.png
-favicon: /assets/images/favicon.png
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
 production_url: https://www.martincimerman.dev/
 source_url: https://www.martincimerman.dev/
 CNAME: #add cname for website to be created
