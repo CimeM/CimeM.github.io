@@ -1,1 +1,1 @@
-web: bundle exec rails server -p 4000
+web: bundle exec jekyll serve -p 4000
