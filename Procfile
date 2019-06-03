@@ -1,1 +1,1 @@
-heroku ps:scale web=1
+web: bundle exec rails server -p 4000
