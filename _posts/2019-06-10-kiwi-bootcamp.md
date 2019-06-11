@@ -164,8 +164,9 @@ You can see there are quite a few interesting parts. Here is how you can underst
         - test1 project
 ```
 - **variables**: Gitlab allows definition of variables within your document. They are later passed to the environments in use. They can be used in scripts using a prefix; dollar sign ($) - with bash. If they are defined only within jobs, then they are used just in that scope. To store sensitive information in your [gitlab](http://gitlab.ci)-ci.yml would be wrong. Secrets are to be defined through gitlab UI, and can be masked for security reasons. In our case there are ones like  `$TF_VAR_gc_zone` . This one was defined through the UI (Project>Settings>CI/CD>Variables). There are also some system variables that define the strategy, submodule strategy, checkout and more. Here is more about that: [variables]([https://docs.gitlab.com/ee/ci/yaml/#git-strategy](https://docs.gitlab.com/ee/ci/yaml/#git-strategy))
-```
 
+
+```
     .terraform: &terraform
       image:
         name: hashicorp/terraform:light
@@ -179,8 +180,8 @@ You can see there are quite a few interesting parts. Here is how you can underst
       <<: *terraform
       variables:
         TF_ACTION: plan
-
 ```
+
 
 Don't be confused because we called our anchor first, before defining variables.
 
