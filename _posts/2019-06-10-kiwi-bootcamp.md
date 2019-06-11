@@ -33,9 +33,9 @@ In next blog posts I will be taking apart some of the intricate configs and tryi
 
 ## Gitlab CICD
 
-This is like your home-made CI/CD but better. Its built into your favourite open-source version control. This means you can CI your code and CD it to production. You can have as many stages as prefer with as many parralel jobs!  
+This is like your home-made CI/CD but better. Its built into your favourite open-source version control. This means you can CI your code and CD it to production. You can have as many stages as prefer with as many parallel jobs!  
 
-Continious Delivery ensures your project is built every time you push to the default branch of your repo. This mean you can catch those bugs early in development stage.
+Continuous Delivery ensures your project is built every time you push to the default branch of your repo. This mean you can catch those bugs early in development stage.
 
 The workshop was based around a file `.gitlab-ci.yml` as you can expect, this file has it all. Let's dive in.
 
@@ -127,7 +127,7 @@ The workshop was based around a file `.gitlab-ci.yml` as you can expect, this fi
 
 You can see there are quite a few interesting parts. Here is how you can understand them:
 
-- Stages: makes room for multi stage - horizontal pipeline. The behaviour follows: all jobs in a stage run in parralel. A stage doesent continue untill jobs in previous stage are concluded. If you don't define stages; 'build', 'deploy'and 'test'will can be used. If a job doesent specify a stage, it is thrown into the test stage.
+- Stages: makes room for multi stage - horizontal pipeline. The behaviour follows: all jobs in a stage run in parallel. A stage doesen't continue until jobs in previous stage are concluded. If you don't define stages; 'build', 'deploy'and 'test'will can be used. If a job doesn't specify a stage, it is thrown into the test stage.
 
 ``` yaml
     stage:
@@ -152,7 +152,7 @@ You can see there are quite a few interesting parts. Here is how you can underst
     	script: make deploy
 ```
 
-- Anchors: let you duplicate content in your config. You can easily write and anchor and use it in combination with hidden keys. You can use hiddenkeys with coma (`.`), and anchors with ampersign (`&`). See how we used the anchor to inject our code (` <<: *job_deffinition `). In our yaml file we had the chance to insert authentication secrets, for our cluster and also to define image name for running jobs.
+- Anchors: let you duplicate content in your config. You can easily write and anchor and use it in combination with hidden keys. You can use hidden keys with coma (`.`), and anchors with ampersand (`&`). See how we used the anchor to inject our code (` <<: *job_deffinition `). In our yaml file we had the chance to insert authentication secrets, for our cluster and also to define image name for running jobs.
 
 ``` yaml
     .job_template: &job_definition  # Hidden key that defines an anchor named 'job_definition'
