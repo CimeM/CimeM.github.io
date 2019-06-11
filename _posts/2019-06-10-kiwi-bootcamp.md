@@ -39,7 +39,7 @@ Continious Delivery ensures your project is built every time you push to the def
 
 The workshop was based around a file `.gitlab-ci.yml` as you can expect, this file has it all. Let's dive in.
 
-```
+``` yaml 
     stages:
       - plan
       - build
@@ -127,7 +127,7 @@ You can see there are quite a few interesting parts. Here is how you can underst
 
 - Stages: makes room for multi stage - horizontal pipeline. The behaviour follows: all jobs in a stage run in parralel. A stage doesent continue untill jobs in previous stage are concluded. If you don't define stages; 'build', 'deploy'and 'test'will can be used. If a job doesent specify a stage, it is thrown into the test stage.
 
-```
+``` yaml
     stage:
     	- build
     	- test
@@ -151,7 +151,8 @@ You can see there are quite a few interesting parts. Here is how you can underst
 ```
 
 - Anchors: let you duplicate content in your config. You can easily write and anchor and use it in combination with hidden keys. You can use hiddenkeys with coma (`.`), and anchors with ampersign (`&`). See how we used the anchor to inject our code (` <<: *job_deffinition `). In our yaml file we had the chance to insert authentication secrets, for our cluster and also to define image name for running jobs.
-```
+
+``` yaml
     .job_template: &job_definition  # Hidden key that defines an anchor named 'job_definition'
       image: ruby:2.1
       services:
@@ -166,7 +167,7 @@ You can see there are quite a few interesting parts. Here is how you can underst
 - **variables**: Gitlab allows definition of variables within your document. They are later passed to the environments in use. They can be used in scripts using a prefix; dollar sign ($) - with bash. If they are defined only within jobs, then they are used just in that scope. To store sensitive information in your [gitlab](http://gitlab.ci)-ci.yml would be wrong. Secrets are to be defined through gitlab UI, and can be masked for security reasons. In our case there are ones like  `$TF_VAR_gc_zone` . This one was defined through the UI (Project>Settings>CI/CD>Variables). There are also some system variables that define the strategy, submodule strategy, checkout and more. Here is more about that: [variables]([https://docs.gitlab.com/ee/ci/yaml/#git-strategy](https://docs.gitlab.com/ee/ci/yaml/#git-strategy))
 
 
-```
+``` yaml
     .terraform: &terraform
       image:
         name: hashicorp/terraform:light
