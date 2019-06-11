@@ -1,10 +1,10 @@
 ---
 layout: post
 current: post
-cover:  assets/images/austin-distel-1555607-unsplash.jpeg
+cover:  assets/images/austin-distel-1555607-unsplash.jpg
 navigation: True
 title: Cloud weekend - kiwi.com bootcamp
-date: 2019-04-10 10:00:00
+date: 2019-06-10 10:00:00
 tags: software
 class: post-template
 subclass: 'software kubernetes pipeline cicd gitlab terraform'
