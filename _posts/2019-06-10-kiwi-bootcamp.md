@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/kobu-agency-703554-unsplash.jpg
+cover:  assets/images/austin-distel-1555607-unsplash.jpeg
 navigation: True
 title: Cloud weekend - kiwi.com bootcamp
 date: 2019-04-10 10:00:00
