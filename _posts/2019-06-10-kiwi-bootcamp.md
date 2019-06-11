@@ -39,7 +39,7 @@ Continuous Delivery ensures your project is built every time you push to the def
 
 The workshop was based around a file `.gitlab-ci.yml` as you can expect, this file has it all. Let's dive in.
 
-``` yaml
+` yaml
 
     stages:
       - plan
@@ -122,7 +122,7 @@ The workshop was based around a file `.gitlab-ci.yml` as you can expect, this fi
         - kubectl apply -f ./k8s
         - kubectl rollout status -f ./k8s/deployment.yaml
 
-```
+`
 
 
 You can see there are quite a few interesting parts. Here is how you can understand them:
