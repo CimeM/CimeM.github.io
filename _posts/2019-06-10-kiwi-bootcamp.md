@@ -150,6 +150,7 @@ job4:
 
 
 ``` yaml
+
 .job_template: &job_definition  # Hidden key that defines an anchor named 'job_definition'
   image: ruby:2.1
   services:
@@ -160,6 +161,7 @@ test1:
   <<: *job_definition           # Merge the contents of the 'job_definition' alias
   script:
     - test1 project
+
 ```
 
 
@@ -167,6 +169,7 @@ test1:
 
 
 ``` yaml
+
 .terraform: &terraform
   image:
     name: hashicorp/terraform:light
@@ -180,6 +183,7 @@ Terraform plan:
   <<: *terraform
   variables:
     TF_ACTION: plan
+
 ```
 
 Don't be confused because we called our anchor first, before defining variables.
@@ -187,3 +191,5 @@ Don't be confused because we called our anchor first, before defining variables.
 There is a lot more to discover with gitlab-ci. you can see more in official [gitlab docs page]([https://docs.gitlab.com/ee/ci/introduction/](https://docs.gitlab.com/ee/ci/introduction/)).
 
 Need to find a CI template for your project? here you go: [templates]([https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates](https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates))
+
+Photo by [Austin Distel](https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
