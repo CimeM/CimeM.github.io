@@ -39,90 +39,88 @@ Continuous Delivery ensures your project is built every time you push to the def
 
 The workshop was based around a file `.gitlab-ci.yml` as you can expect, this file has it all. Let's dive in.
 
-` yaml
+``` yaml
+stages:
+  - plan
+  - build
+  - deploy
 
-    stages:
-      - plan
-      - build
-      - deploy
+.terraform: &terraform
+  image:
+    name: hashicorp/terraform:light
+    entrypoint: [""]
+  script:
+    - terraform init
+    - terraform $TF_ACTION $TF_OPTIONS
 
-    .terraform: &terraform
-      image:
-        name: hashicorp/terraform:light
-        entrypoint: [""]
-      script:
-        - terraform init
-        - terraform $TF_ACTION $TF_OPTIONS
+Terraform plan:
+  stage: plan
+  <<: *terraform
+  variables:
+    TF_ACTION: plan
 
-    Terraform plan:
-      stage: plan
-      <<: *terraform
-      variables:
-        TF_ACTION: plan
+Terraform fmt:
+  stage: plan
+  <<: *terraform
+  variables:
+    TF_ACTION: fmt
+    TF_OPTIONS: -check
+  allow_failure: true
 
-    Terraform fmt:
-      stage: plan
-      <<: *terraform
-      variables:
-        TF_ACTION: fmt
-        TF_OPTIONS: -check
-      allow_failure: true
+Terraform apply:
+  stage: build
+  <<: *terraform
+  variables:
+    TF_ACTION: apply
+    TF_OPTIONS: --auto-approve
+  only:
+    changes:
+      - "*.tf"
+      - "*.gitlab-ci.yml"
+    refs:
+      - master
+  when: manual
 
-    Terraform apply:
-      stage: build
-      <<: *terraform
-      variables:
-        TF_ACTION: apply
-        TF_OPTIONS: --auto-approve
-      only:
-        changes:
-          - "*.tf"
-          - "*.gitlab-ci.yml"
-        refs:
-          - master
-      when: manual
+.gcp-auth: &gcp-auth
+  before_script:
+    - echo "$GOOGLE_CREDENTIALS">/etc/key-file.json
+    - gcloud auth activate-service-account --key-file /etc/key-file.json
+    - gcloud auth configure-docker
+    - gcloud container clusters get-credentials cloudweekend --zone $TF_VAR_gc_zone --project $TF_VAR_gc_project || echo "cluster probably does not exist yet"
 
-    .gcp-auth: &gcp-auth
-      before_script:
-        - echo "$GOOGLE_CREDENTIALS">/etc/key-file.json
-        - gcloud auth activate-service-account --key-file /etc/key-file.json
-        - gcloud auth configure-docker
-        - gcloud container clusters get-credentials cloudweekend --zone $TF_VAR_gc_zone --project $TF_VAR_gc_project || echo "cluster probably does not exist yet"
+.deployment: &deployment
+  image: adamjanis/cloudweekend-runner:lju
+  when: manual
+  only:
+    refs:
+      - master
+  environment:
+    name: default
 
-    .deployment: &deployment
-      image: adamjanis/cloudweekend-runner:lju
-      when: manual
-      only:
-        refs:
-          - master
-      environment:
-        name: default
+Kube canary deploy:
+  stage: deploy
+  <<: *gcp-auth
+  <<: *deployment
+  script:
+    - kubectl apply -f ./k8s/deployment-canary.yaml
+    - kubectl rollout status -f ./k8s/deployment-canary.yaml
 
-    Kube canary deploy:
-      stage: deploy
-      <<: *gcp-auth
-      <<: *deployment
-      script:
-        - kubectl apply -f ./k8s/deployment-canary.yaml
-        - kubectl rollout status -f ./k8s/deployment-canary.yaml
+Kube deploy:
+  stage: deploy
+  <<: *gcp-auth
+  <<: *deployment
+  script:
+    - kubectl apply -f ./k8s/deployment.yaml
+    - kubectl rollout status -f ./k8s/deployment.yaml
 
-    Kube deploy:
-      stage: deploy
-      <<: *gcp-auth
-      <<: *deployment
-      script:
-        - kubectl apply -f ./k8s/deployment.yaml
-        - kubectl rollout status -f ./k8s/deployment.yaml
-
-    Kube full deploy:
-      stage: deploy
-      <<: *gcp-auth
-      <<: *deployment
-      script:
-        - kubectl apply -f ./k8s
-        - kubectl rollout status -f ./k8s/deployment.yaml
-
-`
+Kube full deploy:
+  stage: deploy
+  <<: *gcp-auth
+  <<: *deployment
+  script:
+    - kubectl apply -f ./k8s
+    - kubectl rollout status -f ./k8s/deployment.yaml
+```
 
 
 You can see there are quite a few interesting parts. Here is how you can understand them:
