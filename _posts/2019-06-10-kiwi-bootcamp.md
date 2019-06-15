@@ -195,4 +195,38 @@ There is a lot more to discover with gitlab-ci. you can see more in official [gi
 
 Need to find a CI template for your project? here you go: [templates]([https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates](https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates))
 
+
+## Terraform 
+
+we began with thegighlight of our workshop Terraform. Created by Hashicorp it reprisents a tool for writing planing and creating Infrastructure as a code. 
+
+Our task was to deploy an app to google cloud. We began by simple configuration that consisted of a resource we wanted to publish: 
+
+``` yml
+
+    resource "aws_instance" "app" { 
+    	instance_type = "t2.micro" 
+    	availability_zone = "us-east-1a" 
+    	ami = "ami-40d28157"
+    	user_data = <<-EOF #!/bin/bash
+    				sudo service apache2 start
+    				EOF
+    }
+
+```
+
+
+This is an resource block as an example on the syntax used to configure terraform. For now, just focus on this and forget about the rest. This exact config is not from our workshop but from a book and it is here because it demonstrates the simplicity of the configuration. 
+
+***aws_instance*** - this is a resource type followed by a given name "app". The name is used to refer to the this resource from elsewhere in the same Teraforrm module., but has no significance outside outside of the scope of a module. THe resource type and name together form a unique id and serve as an identifier.
+
+***ami*** - this parameter specifies the ID of an ami server to be deployed.
+
+***user_data*** - this is a bash script that executes when webserver is booting, the example above is just to boot Apache service.
+
+Terraform is written in go. The main action performed by terraform is to call API calls towards cloud providers like Google Cloud Platform, Amazon web services, Microsoft Azure,  etc.
+
+When someone would want to make a change on the infrastructure, instead of updating it manually, they make their changes in the Terraform templates, validate the changes, through automated tests, and code reviews, commit the updates, to version control and then run `terraform apply` to have Terraform make necessary API calls to deploy the changes on the cloud.
+
+
 Photo by [Austin Distel](https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
