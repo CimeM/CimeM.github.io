@@ -151,15 +151,16 @@ job4:
 
 
 ``` yaml
-
-.job_template: &job_definition # Hidden key that defines an anchor named 'job_definition'
+# Hidden key that defines an anchor named 'job_definition'
+.job_template: &job_definition 
   image: ruby:2.1
   services:
     - postgres
     - redis
 
 test1:
-  <<: *job_definition # Merge the contents of the 'job_definition' alias
+  # Merge the contents of the 'job_definition' alias
+  <<: *job_definition 
   script:
     - test1 project
 
