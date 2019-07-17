@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/austin-distel-1555607-unsplash.jpg
+cover:  assets/images/kiwi-bootcamp.jpg
 navigation: True
 title: Cloud weekend - kiwi.com bootcamp
 date: 2019-06-10 10:00:00
@@ -193,5 +193,57 @@ Don't be confused because we called our anchor first, before defining variables.
 There is a lot more to discover with gitlab-ci. you can see more in official [gitlab docs page]([https://docs.gitlab.com/ee/ci/introduction/](https://docs.gitlab.com/ee/ci/introduction/)).
 
 Need to find a CI template for your project? here you go: [templates]([https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates](https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates))
+
+
+## Terraform
+
+Terraform is an opensource orchestration tool for provisioning your muatable infrastructure using declarative appraoch. Thetool is quite new (being released in 2014) and has quite a big community due to the age. The key advantage is multicloud provisioning. Config files use HCL syntax, which is better for us to read or with JSON format - for software based appraoch. 
+
+
+Here are two blocks of configuration. First one defines a VM on a provider, the other creates a simple DNS record. You can easily change the provider and use the seme configuration to create a VM on a different provider. 
+ 
+
+``` json
+resource "aws_instance" "app" {
+ instance_type = "t2.micro"
+ availability_zone = "us-east-1a"
+ ami = "ami-40d28157"
+ user_data = <<-EOF
+ #!/bin/bash
+ sudo service apache2 start
+ EOF
+}
+resource "aws_db_instance" "db" {
+ allocated_storage = 10
+ engine = "mysql"
+ instance_class = "db.t2.micro"
+ name = "mydb"
+ username = "admin"
+ password = "password"
+}
+resource "aws_elb" "load_balancer" {
+  name = "frontend-load-balancer"
+   instances = ["${aws_instance.app.id}"]
+   availability_zones = ["us-east-1a"]
+   listener {
+     instance_port = 8000
+     instance_protocol = "http"
+     lb_port = 80
+     lb_protocol = "http"
+   }
+  }
+}
+```
+
+user data - bash script that executes while the instance is booting.
+
+##### Procedural vs declarative 
+
+There is an abundance of reasons why declarative approach is better that procedural. One of the main ones is that the configuration you read with declarative is always the latest one. Because terraform would destroy anything that exists on site but not in your config. The other side is that with procedural appraoch, you have to ensure for yourself, that your slate is clean before applying new configuration. Otherwise you can end up with duplicates.
+
+##### Client/server vs Client only 
+
+Terraform and ansible are almost only client-only orchestrators. This only means you do not need to install terraform to instances running on prem or in the cloud. That would be different with Clinet/server configurations.
+
 
 Photo by [Austin Distel](https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
