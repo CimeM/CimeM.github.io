@@ -12,7 +12,8 @@ author: martin
 ---
 
 
-Developers and Infrastructure engineers from [kiwi.com](http://kiwi.com) prepared a bootcamp-like workshop in the weekend days in Ljubljana from 7 to 9th June 2019. The course followed a hands-on workshop method and builds upon containerisation, integration and deployment skills. We had the opportunity to learn Terraform, Kubernetes and Gitlab CI/CD. Our mentors were kind enough to show us how to build production grade infrastructure with healing, scalability and fault tolerance in mind. We also had a discussion at the end where we got a glimpse into their production environment and got to know some of the practices they use on their systems.
+Developers at [kiwi.com](https://kiwi.com) prepared weekend long workshop in Ljubljana from 7 to 9th June 2019. The course listed presentations as well as hands-on workshops to teach containerisation, CI CD and infrastructure automation. We had the opportunity to learn Terraform, Kubernetes and Gitlab CI/CD. Mentors from Brno and Ljubljana were kind enough to show us how to build production grade infrastructure with healing, scalability and fault tolerance in mind. The amount of information I learned is almost overwhelming. This blogpost almost wrote itself from the amount of notes taken. At the end we also had a discussion where we got a glimpse into their production environment and got to know some of the practices and unwritten rules they keep close, to amend their infrastructure.
+
 
 #### Gatekeeping:
 
