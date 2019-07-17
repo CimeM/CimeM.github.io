@@ -151,15 +151,16 @@ job4:
 
 
 ``` yaml
-
-.job_template: &job_definition # Hidden key that defines an anchor named 'job_definition'
+# Hidden key that defines an anchor named 'job_definition'
+.job_template: &job_definition 
   image: ruby:2.1
   services:
     - postgres
     - redis
 
 test1:
-  <<: *job_definition # Merge the contents of the 'job_definition' alias
+  # Merge the contents of the 'job_definition' alias
+  <<: *job_definition 
   script:
     - test1 project
 
@@ -237,6 +238,8 @@ resource "aws_elb" "load_balancer" {
 
 user data - bash script that executes while the instance is booting.
 
+When someone would want to make a change on the infrastructure, instead of updating it manually, they make their changes in the Terraform templates, validate the changes, through automated tests, and code reviews, commit the updates, to version control and then run `terraform apply` to have Terraform make necessary API calls to deploy the changes on the cloud.
+
 ##### Procedural vs declarative 
 
 There is an abundance of reasons why declarative approach is better that procedural. One of the main ones is that the configuration you read with declarative is always the latest one. Because terraform would destroy anything that exists on site but not in your config. The other side is that with procedural appraoch, you have to ensure for yourself, that your slate is clean before applying new configuration. Otherwise you can end up with duplicates.
@@ -245,5 +248,3 @@ There is an abundance of reasons why declarative approach is better that procedu
 
 Terraform and ansible are almost only client-only orchestrators. This only means you do not need to install terraform to instances running on prem or in the cloud. That would be different with Clinet/server configurations.
 
-
-Photo by [Austin Distel](https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
