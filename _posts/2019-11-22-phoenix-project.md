@@ -83,8 +83,8 @@ Here are some of the other memorable notes I took while reading: 
 ### Types of work
 Through the whole story, we get to discover the 4 types of work. They ultimately dictate how and when the tasks should be worked on. 
 * Business projects 
-* IT tasks 
-    * operation projects that business projects create (create a new environment, automate deployment) 
+* IT tasks
+    * operation projects that business projects create (create a new environment, automate deployment)
 * Changes 
     * generated from IT tasks and business decisions 
 * Unplaned work or recovery work 
@@ -103,7 +103,8 @@ The graph is not a real interpretation of the real wait time but merely serves a
  
 Wait time combined with handoffs explains why tasks are getting stuck in the waiting line. Handoffs happen when a person is working on a task but realizes it is time to hand it off to the next person. The ticket enters the waiting line for the next person. If tickets have 7 handoffs and every single one takes 9 hours (90% resource utilization) that leads to 63 hours of queue time for the task. If the resource would be at 50% utilization the overall time would be reduced to 7x(50/50) = 7h. 
 * one-time unit is 1 hour. 
- 
+
+
  
 ### Technical debt 
 Technical debt is that work you leave behind when saying: I will work on this when I will have some extra time. It's easy to just forget about it and leave it behind. In terms of IT, technical debt can be from refactoring, writing tests, deployment procedure, build scripts etc… It can be anything that doesn't satisfy the immediate need but needs to be done eventually. 
@@ -114,9 +115,9 @@ Everything from the start of the product production line to the product being re
 ### Why Brent is a constraint: 
 Brent Geller is a go-to engineer for unsolvable problems. He has the experience to solve even the most difficult problems. The things he does are known only to him. And when he goes on vacation, no real work is getting done. The catch is that he is a constraint. Because of this, all the projects went with the speed he dictated. And since the tasks piled in front, the only way to get something done fast needed to be escalated. And that meant, even more, wait time for the rest of the queue. The solution to this problem was to assign knowledge transfers, automated procedures and strict offloading of the tasks from Brents queue. 
 
-  
+
 
 Subordination and elevation of the constraint 
-In “The Goal” Alex puts Herbie, the slowest scout, at the front of the whole marching row of scouts. Herbie was the slowest, so he dictated the speed of the whole process. The similar process was later implemented in the production pant. Alex subordinates the work to the bottleneck - the heat treating oven. he finally realizes this was a step in the right direction but needed more work. The whole process was synchronised, but not optimised for speed. Some processes still had to wait or slow down because they were faster than the tempo. To speed up the slowest part in the production line they combined the heat treat oven with the process of painting. After the mod, the oven could do the painting and curing. In this step they combined the four work centres into one, they eliminated over thirty manual error-prone steps, completely automating the work cycle. They achieved single-piece flow and eliminated all setup time. They managed to increase the speed of the bottleneck and with that, they managed to increase the overall output. This was the second constraint they were dealing with. The first one was the NCX-10 robot. And the one after the oven was market - which is outside of the production plant. The result was so impressive Alex Rogo gets promoted. 
+In “The Goal” Alex puts Herbie, the slowest scout, at the front of the whole marching row of scouts. Herbie was the slowest, so he dictated the speed of the whole process. The similar process was later implemented in the production pant. Alex subordinates the work to the bottleneck - the heat treating oven. he finally realizes this was a step in the right direction but needed more work. The whole process was synchronised, but not optimised for speed. Some processes still had to wait or slow down because they were faster than the tempo. To speed up the slowest part in the production line they combined the heat treat oven with the process of painting. After the mod, the oven could do the painting and curing. In this step they combined the four work centres into one, they eliminated over thirty manual error-prone steps, completely automating the work cycle. They achieved single-piece flow and eliminated all setup time. They managed to increase the speed of the bottleneck and with that, they managed to increase the overall output. This was the second constraint they were dealing with. The first one was the NCX-10 robot. And the one after the oven was market - which is outside of the production plant. The result was so impressive Alex Rogo gets promoted.  
 In the Phoenix project, Bill Palmer did the same by managing tasks Brent did. They offloaded his waiting list, transferred knowledge to other members and ensured he can go on vacation without halting the system. The next constraint was MRP application support - this is not within the organization anymore. 
  
