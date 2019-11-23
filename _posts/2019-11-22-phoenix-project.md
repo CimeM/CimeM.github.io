@@ -60,7 +60,9 @@ The new structure doesn't allow this behaviour any more. This brings some fricti
 * fear of conflict - seeking artificial harmony over the constructive passionate debate 
 * avoidance of accountability - ducking the responsibility to call peers on counterproductive behaviour, which sets low standards 
 * inattention to results - focusing on personal success and ego before team success 
- 
+
+
+  
 ### Key realizations 
 By the time a new project arrives (project Unicorn), the IT department adopts it using the iterative deployment lifecycle. This helps them identify issues faster and early in the process of development. Also, the customers are happier because they can steer the product along the way. 
 The department increases cycle time towards the goal, which is 10 deployments per day. This makes the updates smaller and easier to manage on the production systems. They adjust for the quantitative deployments and start to collaborate in a way that supports the deployment process. Teams even recognise the doubled work and eliminate it. 
