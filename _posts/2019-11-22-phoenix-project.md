@@ -83,7 +83,7 @@ In the beginning, the Parts Unlimited tracked projects by the deadline time. By 
 The whole problem solving is focused on removing constraints. The only graph in the book shows the wait time as a relationship between resource busy time and its idle time. Erik used it to show why 30-minute changes take weeks to be completed. Because Brent was constantly being used, the work piled before him. The tasks waited a long time before being done unless escalations occurred. And even when they did it was more often hurting the process, because they came from unqualified work processes across the company. 
 The graph is not a real interpretation of the real wait time but merely serves as an indicator of what to expect from resources when being overloaded. 
 
-![assets/images/phoenix-project-wait-time.jpg]()
+![The only image in the book is a graph](assets/images/phoenix-project-wait-time.jpg)
  
 Wait time combined with handoffs explains why tasks are getting stuck in the waiting line. Handoffs happen when a person is working on a task but realizes it is time to hand it off to the next person. The ticket enters the waiting line for the next person. If tickets have 7 handoffs and every single one takes 9 hours (90% resource utilization) that leads to 63 hours of queue time for the task. If the resource would be at 50% utilization the overall time would be reduced to 7x(50/50) = 7h. 
 * one-time unit is 1 hour. 
