@@ -62,7 +62,7 @@ The new structure doesn't allow this behaviour any more. This brings some fricti
 * inattention to results - focusing on personal success and ego before team success 
 
 
-  
+
 ### Key realizations 
 By the time a new project arrives (project Unicorn), the IT department adopts it using the iterative deployment lifecycle. This helps them identify issues faster and early in the process of development. Also, the customers are happier because they can steer the product along the way. 
 The department increases cycle time towards the goal, which is 10 deployments per day. This makes the updates smaller and easier to manage on the production systems. They adjust for the quantitative deployments and start to collaborate in a way that supports the deployment process. Teams even recognise the doubled work and eliminate it. 
@@ -81,7 +81,9 @@ Here are some of the other memorable notes I took while reading: 
 * Feedback: Understand the needs of both internal and external customers. Shorten the feedback loops whenever possible. Continuously ask customers for the review. 
 * Continual Learning(CL): Encourage experimentation and learn from failures. Don’t expect to be perfect at the beginning. But do make improvements along the way. 
 * Automate what you can. 
- 
+
+
+
 ### Types of work
 Through the whole story, we get to discover the 4 types of work. They ultimately dictate how and when the tasks should be worked on. 
 * Business projects 
