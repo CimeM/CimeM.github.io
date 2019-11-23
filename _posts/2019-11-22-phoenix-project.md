@@ -102,7 +102,7 @@ The graph is not a real interpretation of the real wait time but merely serves a
 ![The only image in the book is a graph](assets/images/phoenix-project-wait-time.jpg)
  
 Wait time combined with handoffs explains why tasks are getting stuck in the waiting line. Handoffs happen when a person is working on a task but realizes it is time to hand it off to the next person. The ticket enters the waiting line for the next person. If tickets have 7 handoffs and every single one takes 9 hours (90% resource utilization) that leads to 63 hours of queue time for the task. If the resource would be at 50% utilization the overall time would be reduced to 7x(50/50) = 7h. 
-* one-time unit is 1 hour. 
+###### one-time unit is 1 hour. 
 
 
  
