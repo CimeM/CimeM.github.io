@@ -89,7 +89,8 @@ Through the whole story, we get to discover the 4 types of work. They ultimately
     * generated from IT tasks and business decisions 
 * Unplaned work or recovery work 
     * operational incidents often caused by previous types of work. Always comes at the expense of other planned work commitments. 
- 
+
+
 ### Kanban boards 
 When they recognised that Brent is the constraint rather than a liability, they wrote down the tasks on post-it notes and attached it to a whiteboard. The lines separate tasks that are being worked on and the ones still waiting or pending. Doing this allowed better transparency and visibility. With kanban, they were able to reduce reliance on Brent for unplanned work and even outages. They even started to figure out ways to exploit Brent better for the remaining three types of work: business, IT and changes. 
 Kanban can be modified to fit the needs of a team: The lanes can be further divided into smaller sections and even types of work. The doing section, for example, can be divided into planning, development, testing and deployment. 
