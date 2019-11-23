@@ -35,7 +35,7 @@ They managed to deliver because they hold on to the new rules and this finally s
 
 The novel’s ending almost sounds too exaggerated. And the story is often repetitive. Bill Palmer gets this big promotion for saving the IT department and makes the company overcome competition. I read the ending just because I hoped for another lesson. However, I believe that the techniques described, even if just theoretical, have the potential and are well worth considering the implementation. 
 
-  
+
 
 Continuous delivery (CD) as the goal for the IT department
 CD is where most of the recurring tasks are automated, constraints are managed and the company can release to production with the speed of 10 times per day. The software isn’t delivered in large silos anymore and released on the due date but rather released in small chunks to the already established platform. The author argues this is also the state all IT companies should be in to successfully reach deadlines and deliver their promised product. Of course, the automation and tools have advanced since the book was released, but it is still a great start for those reaching for similar goals.
@@ -52,7 +52,8 @@ The theory of constraints comes as a cycle that also plays a big part in the com
 * elevate the constraint to new levels 
 * find the next constraint 
  
- 
+
+
 The book also describes relations between the business executives in the company. Because IT departments are struggling to deliver their products, some executives grow habits to address IT personnel directly to advance their agenda. The story describes how the Director of Distributed Technology operations Wes Davis corners Brent, the IT employee, to work on their product first. 
 The new structure doesn't allow this behaviour any more. This brings some friction to the members that got uses dot cut corners. Bill Palmer tries to resolve the issue politely at the beginning. He explained that this behaviour will bring the IT department back to the old system. Wes eventually ignores the warnings and eventually ends up getting fired from the company. In the end, the board started to cooperate differently and that reflected in the benefits I included the list of five dysfunctions of a team. There are quite a few pointers in the book that indicate when individuals break such rules. 
 * absence of trust - unwilling to be vulnerable within the group 
@@ -69,7 +70,9 @@ The department increases cycle time towards the goal, which is 10 deployments pe
 * a project can be split into manageable chunks 
 * benefits of cross-team synchronization  
 * automate recurring tasks 
- 
+
+
+
 Here are some of the other memorable notes I took while reading: 
  - Understand how code moves through the system. (aka product lifecycle) 
 * Expect random effects from software updates. Always increase the speed of the flow but never pass defects downstream (technical debt). 
@@ -110,7 +113,9 @@ Everything from the start of the product production line to the product being re
  
 ### Why Brent is a constraint: 
 Brent Geller is a go-to engineer for unsolvable problems. He has the experience to solve even the most difficult problems. The things he does are known only to him. And when he goes on vacation, no real work is getting done. The catch is that he is a constraint. Because of this, all the projects went with the speed he dictated. And since the tasks piled in front, the only way to get something done fast needed to be escalated. And that meant, even more, wait time for the rest of the queue. The solution to this problem was to assign knowledge transfers, automated procedures and strict offloading of the tasks from Brents queue. 
- 
+
+  
+
 Subordination and elevation of the constraint 
 In “The Goal” Alex puts Herbie, the slowest scout, at the front of the whole marching row of scouts. Herbie was the slowest, so he dictated the speed of the whole process. The similar process was later implemented in the production pant. Alex subordinates the work to the bottleneck - the heat treating oven. he finally realizes this was a step in the right direction but needed more work. The whole process was synchronised, but not optimised for speed. Some processes still had to wait or slow down because they were faster than the tempo. To speed up the slowest part in the production line they combined the heat treat oven with the process of painting. After the mod, the oven could do the painting and curing. In this step they combined the four work centres into one, they eliminated over thirty manual error-prone steps, completely automating the work cycle. They achieved single-piece flow and eliminated all setup time. They managed to increase the speed of the bottleneck and with that, they managed to increase the overall output. This was the second constraint they were dealing with. The first one was the NCX-10 robot. And the one after the oven was market - which is outside of the production plant. The result was so impressive Alex Rogo gets promoted. 
 In the Phoenix project, Bill Palmer did the same by managing tasks Brent did. They offloaded his waiting list, transferred knowledge to other members and ensured he can go on vacation without halting the system. The next constraint was MRP application support - this is not within the organization anymore. 
