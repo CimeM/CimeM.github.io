@@ -14,16 +14,23 @@ author: martin
 The Phoenix project is a throwback to “the Goal” a book that united lessons from the Theory of Constraints (TOC) and a story of a production plant manager. 
 The Phoenix authors didn’t hide they were borrowing lessons from the goal. They even made it obvious by comparing the production plant and the software release processes. If you compare the books, they both have a similar storyline, a protagonist that struggles to keep up with discovering the rules of TOC and facing the disbelief at the same time. The end in both cases is positive and the hero gets rewarded for the efforts.
 The reader doesn't need to know the Goal to follow up with the phoenix. 
+
+
 The Goal inspired many readers and even got on the list of the 25 most influential business management books. The same lessons can today be found in many prestigious business schools. The Phoenix brings the same lessons into the present, where code lives practically everywhere and almost any IT professional will relate to the narrative with no trouble. In this article we will go through the TOC cycle and how do the tools like Kanban and Tickets help to reach Continuous Delivery (CD).
- 
+
+
 If you found yourself here reading this article without opening the Phoenix I advise you to read on! You can expect spoilers in such manner that you will eventually end up buying the book.
  
  
 The happening revolves around the main protagonist Bill Palmer who goes through a revealing process that dismantles the IT department and connects it back together by using the core rules from the Goal. Because the IT department struggles to keep up with the release of the Phoenix project the company Parts Unlimited struggles to maintain its public integrity. Captured in the prison of their own mistakes the IT department delivers an unstable product that pushed the company in risky waters. Along the way, they discovered many security problems that got released in the public. This was bad news for the whole company and eventually, the whole IT department is threatened to be replaced by an outsourced team. But they manage to save themselves and the company along the way.
+
+
 They managed to deliver because they hold on to the new rules and this finally save themselves and others from meeting the bitter end. The board of the company did not understand at first but eventually saw the results. The IT department continued to surprise everyone by increasing the quality of the company’s business process by meeting market demands faster. The company was able to re-gain its reputation and even overcame its previous records. Through the story, the author described the tools and methods that the protagonist implemented to meet all these goals. I saw many companies, departments and even small teams adopting these approaches to optimize their flows.
- 
+
+
 The novel’s ending almost sounds too exaggerated. And the story is often repetitive. Bill Palmer gets this big promotion for saving the IT department and makes the company overcome competition. I read the ending just because I hoped for another lesson. However, I believe that the techniques described, even if just theoretical, have the potential and are well worth considering the implementation. 
- 
+
+
 Continuous delivery (CD) as the goal for the IT department
 CD is where most of the recurring tasks are automated, constraints are managed and the company can release to production with the speed of 10 times per day. The software isn’t delivered in large silos anymore and released on the due date but rather released in small chunks to the already established platform. The author argues this is also the state all IT companies should be in to successfully reach deadlines and deliver their promised product. Of course, the automation and tools have advanced since the book was released, but it is still a great start for those reaching for similar goals.
  
