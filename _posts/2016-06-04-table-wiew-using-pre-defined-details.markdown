@@ -3,12 +3,13 @@ layout: post
 current: post
 cover:  assets/images/CTV_newtableview_2x.jpg
 navigation: True
-title: Table wiew - using pre-defined details
+title: iOS Table wiew - using pre-defined details
 date: 2016-06-04 10:00:00
 tags: software
 class: post-template
 subclass: 'post tag-getting-started MVC swift iOS OSX apple dev development code programmming'
 author: martin
+published: true
 ---
 
 Table view is one of predefined views, you can use, if you want to show a list of items. One of the things, worth mentioning is that there are predefined details we, as developers can take advantage detail of.

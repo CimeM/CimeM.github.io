@@ -9,6 +9,7 @@ tags: code
 class: post-template
 subclass: 'post data science Arduino programing'
 author: martin
+published: true
 ---
 
 In previous posts, I have mentioned a way to establish hardware and software for Arduino data logger. In this post, we will be looking at some software tweaks thus arriving to a new software update (2.0).

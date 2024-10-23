@@ -9,6 +9,7 @@ tags: software
 class: post-template
 subclass: 'post tag-getting-started MVC swift development code software'
 author: martin
+published: true
 ---
 
 

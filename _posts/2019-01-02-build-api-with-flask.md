@@ -9,6 +9,7 @@ tags: software
 class: post-template
 subclass: 'facebook bot AI drawing time timing'
 author: martin
+published: true
 ---
 
 Application interfaces are the bridges between two or more software entities. APIs are present everywhere, they are a standard method to expose databases to clients.

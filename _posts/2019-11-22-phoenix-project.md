@@ -9,13 +9,12 @@ tags: devops
 class: post-template
 subclass: 'book devops CI management'
 author: martin
+published: true
 ---
 
 The Phoenix project is a throwback to “the Goal” a book that united lessons from the Theory of Constraints (TOC) and a story of a production plant manager. 
 The Phoenix authors didn’t hide they were borrowing lessons from the goal. They even made it obvious by comparing the production plant and the software release processes. If you compare the books, they both have a similar storyline, a protagonist that struggles to keep up with discovering the rules of TOC and facing the disbelief at the same time. The end in both cases is positive and the hero gets rewarded for the efforts.
 The reader doesn't need to know the Goal to follow up with the phoenix. 
-
-
 
 The Goal inspired many readers and even got on the list of the 25 most influential business management books. The same lessons can today be found in many prestigious business schools. The Phoenix brings the same lessons into the present, where code lives practically everywhere and almost any IT professional will relate to the narrative with no trouble. In this article we will go through the TOC cycle and how do the tools like Kanban and Tickets help to reach Continuous Delivery (CD).
 
@@ -110,7 +109,7 @@ Wait time combined with handoffs explains why tasks are getting stuck in the wai
 ###### one-time unit is 1 hour. 
 
 
- 
+
 ### Technical debt 
 Technical debt is that work you leave behind when saying: I will work on this when I will have some extra time. It's easy to just forget about it and leave it behind. In terms of IT, technical debt can be from refactoring, writing tests, deployment procedure, build scripts etc… It can be anything that doesn't satisfy the immediate need but needs to be done eventually. 
  
@@ -125,4 +124,4 @@ Brent Geller is a go-to engineer for unsolvable problems. He has the experience 
 Subordination and elevation of the constraint 
 In “The Goal” Alex puts Herbie, the slowest scout, at the front of the whole marching row of scouts. Herbie was the slowest, so he dictated the speed of the whole process. The similar process was later implemented in the production pant. Alex subordinates the work to the bottleneck - the heat treating oven. he finally realizes this was a step in the right direction but needed more work. The whole process was synchronised, but not optimised for speed. Some processes still had to wait or slow down because they were faster than the tempo. To speed up the slowest part in the production line they combined the heat treat oven with the process of painting. After the mod, the oven could do the painting and curing. In this step they combined the four work centres into one, they eliminated over thirty manual error-prone steps, completely automating the work cycle. They achieved single-piece flow and eliminated all setup time. They managed to increase the speed of the bottleneck and with that, they managed to increase the overall output. This was the second constraint they were dealing with. The first one was the NCX-10 robot. And the one after the oven was market - which is outside of the production plant. The result was so impressive Alex Rogo gets promoted.  
 In the Phoenix project, Bill Palmer did the same by managing tasks Brent did. They offloaded his waiting list, transferred knowledge to other members and ensured he can go on vacation without halting the system. The next constraint was MRP application support - this is not within the organization anymore. 
- 
+

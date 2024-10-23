@@ -3,12 +3,13 @@ layout: post
 current: post
 cover:  assets/images/drawing-app.jpg
 navigation: True
-title: Create your own drawing app
+title: iOS drawing app
 date: 2017-11-28 10:00:00
 tags: software
 class: post-template
 subclass: 'post coding app drawing time timing'
 author: martin
+published: true
 ---
 
 In this lesson, you create the main screen of the Drawing app. You will create a single view app with sketch scene. You will position special buttons that will represent pen settings and accommodate other buttons for interaction. The end result will look like this:

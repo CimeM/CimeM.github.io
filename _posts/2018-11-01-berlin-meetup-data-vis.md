@@ -9,6 +9,7 @@ tags: meetup visualization
 class: post-template
 subclass: 'post networking data science visualization datawrapper meetup'
 author: martin
+published: true
 ---
 
 This week I have visited a data science meetup in Berlin at Datawrapper. The meetup was a mixture of a book club and a branch of data science where the theme was about a book: "[Storytelling with data](https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals-ebook/dp/B016DHQSM2/ref=sr_1_1?ie=UTF8&qid=1541458749&sr=8-1&keywords=storytelling+with+data)" written by Cole Nussbaumer Knaflic.

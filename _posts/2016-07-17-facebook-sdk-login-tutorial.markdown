@@ -9,6 +9,7 @@ tags: software
 class: post-template
 subclass: 'Facebook SDK tutorial App iOS'
 author: martin
+published: true
 ---
 
 In this lesson, you will create an app that connects to your Facebook account. You will be able to connect (log in) to your account on Facebook. And retrieve some basic information from your profile.

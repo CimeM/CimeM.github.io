@@ -9,6 +9,7 @@ tags: book
 class: post-template
 subclass: 'post tag-getting-started'
 author: martin
+published: true
 ---
 
 You have probably seen a factory before. You probably drove by one today. From the outside it looks dull, because iron curtains hide the marvel that is going on inside.

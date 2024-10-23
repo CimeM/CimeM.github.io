@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/theGoal-novel.jpg
 navigation: True
-title: Completion handler
+title: Completion handler in C
 date: 2016-06-25 10:00:00
 tags: software
 class: post-template

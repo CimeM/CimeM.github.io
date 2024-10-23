@@ -2,13 +2,13 @@
 layout: post
 current: post
 cover:  assets/images/ricardo-gomez-angel-204573-unsplash.jpg
-navigation: True
 title: The delegate pattern
 date: 2016-06-21 10:00:00
 tags: software
 class: post-template
 subclass: 'programming App pattern iPhone'
 author: martin
+published: true
 ---
 
 In general, this pattern was adopted by iOS developers very early and it has become a fundamental part of iOS development. Often interaction is guaranteed when dealing with user interfaces in iOS. The point of this pattern is that it allows you to easily handle/customise the behaviour of several objects in one central objects.

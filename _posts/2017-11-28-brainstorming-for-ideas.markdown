@@ -8,14 +8,12 @@ date: 2017-11-28 10:00:00
 tags:
 class: post-template
 subclass: 'post ideas brainstorming'
-published: false
 author: martin
 published: false
 ---
 
 
 ![alt text](https://cdn-images-1.medium.com/max/800/1*cB9tYaGr_gTKeFESqkuFcQ@2x.jpeg "Image from Unsplash")
-
 
 Whether you just started on a project or you’ve gazed a long path with it, you had to find a name for it. For me, this was the name of my new website. This is the name I will identify all my future projects with. However, I don’t have time for the soul-searching mantra. And, as if that wasn’t enough, I had to find the domain name that was available. What I found surprised me. I will be turning my attention to this method for future projects as well.
 
@@ -41,9 +39,10 @@ The first few titles have to be humorous. Because humour is known to bring down 
 
 I read them one by one. And almost hearing how neurons started to fire, I was pulled into a storm of ideas and could not get out. This can be addictive I thought to myself. What took me a couple of weeks ended up being finished in a couple of minutes! Still amazed how cool this idea is, I’ve included the titles for you to read. I know I will be using this method for the multitude of challenges in the future. Don’t overdose.
 
-###TItles:
+### TItles
 
-####Funny
+#### Funny
+
 1. Official Book Club Selection
 Kathy Griffin (Ballantine)
 

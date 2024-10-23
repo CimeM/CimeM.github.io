@@ -9,6 +9,7 @@ tags: software
 class: post-template
 subclass: 'software kubernetes pipeline jekyll'
 author: martin
+published: true
 ---
 
 Here we are building a simple Jekyll CICD.

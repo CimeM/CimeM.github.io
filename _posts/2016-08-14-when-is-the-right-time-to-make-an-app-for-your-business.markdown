@@ -9,6 +9,7 @@ tags: software
 class: post-template
 subclass: 'post app business time timing'
 author: martin
+published: true
 ---
 
 If you are planning to establish a mobile presence with your customers, you have probably come across two options: Mobile website and Mobile Application (App). They both look very similar at first glance but actually differ quite a lot. The intended purpose is to consider everything before making a decision. Your users will notice, so it's worth spending the time to make the right one.

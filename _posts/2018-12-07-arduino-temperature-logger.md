@@ -9,6 +9,7 @@ tags: arduino sensor code
 class: post-template
 subclass: 'post data science Arduino programing'
 author: martin
+published: true
 ---
 
 When Arduino came out with their open-source microcontrollers the world changed forever. We saw countless new communities, maker fairies and ways of manipulating hardware. Arduino, for many, represents a prototyping stepping stone towards finished products. To others, it is the first encounter to software or hardware or both. Basically its cheap enough, you won't break the bank if it catches on fire.

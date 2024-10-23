@@ -9,9 +9,8 @@ tags: [Biometry]
 class: post-template
 subclass: 'post data ecg'
 author: martin
-published: false
+published: true
 ---
-
 
 Biometrics technology is a way to apply mathematics to the nature, by using unique patterns of physiological and behavioural characteristics. We use biometrics every day to solve our security needs. We use it to unlock our computers, pay online and access our workplace by using our fingerprints, faces, and other biometrical features. Security has always been a prime concern of societies. Identity theft, ID manipulation and other cyber crimes are challenges that need a potent solution. To ensure security, biometrics is applied as a layer that provides for personal, governmental and even forensic applications. We use our fingerprints to unlock our phones. Is it possible for us to use heart ECG signals to do the same? We are own more technology than ever before, it will not be long since our wearables will be able to recognise us based on our heart.
 Measuring ones heart behaviour and using it as an identification tool is a challenge. Mainly because producing reliable measurements is not as quick as taking a hi-res photo of retinas or scanning your fingerprints. Regular ECG measurements, take up to 10 minutes because our body needs to be stabilised in order to produce reliable measurements. Not to mention that the beating pattern changes on monthly basis and could change in a years time. The template would have to be updated periodically.

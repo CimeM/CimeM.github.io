@@ -9,6 +9,7 @@ tags: trip environment
 class: post-template
 subclass: 'data programing software '
 author: martin
+published: true
 ---
 
 If you're like me, you do everything in docker. Making a test site on my computer and implementing that funny database that just came out is a common scenario. Appart from religious things, docker is a serious tool and here is a way how you can implement graphite database into the docker container, export it and install it somewhere else. And yes, that includes histoy data.

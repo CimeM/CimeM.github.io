@@ -9,6 +9,7 @@ tags: software
 class: post-template
 subclass: 'software kubernetes pipeline cicd gitlab terraform'
 author: martin
+published: true
 ---
 
 

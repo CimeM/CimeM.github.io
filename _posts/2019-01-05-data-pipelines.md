@@ -9,6 +9,7 @@ tags: software
 class: post-template
 subclass: 'software data pipeline datalake sensors ML'
 author: martin
+published: true
 ---
 
 Data pipeline is a concept for data being brought from one end to another, usually with some modifications along the way. It all comes down to a set of instructions, that extract data or push it from one end to another, only to reach its goal. Sometimes data is aggregated on one location and when the time is right, the triggers launch the process of data extraction. 
