@@ -8,8 +8,8 @@ date: 2018-03-11 10:00:00
 tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'
-published: false
 author: martin
+published: false
 ---
 
 <b><i>Facing debts, becoming financially independent or sorting financial part of your life can seem like a burden and can stress you out so much, that you end up leaving the goal unreached. This can result in devastating consequences alike getting deeper into debt or losing your assets.</i></b>

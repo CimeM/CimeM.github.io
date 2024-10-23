@@ -13,7 +13,7 @@ layout: archive
 {% endif %}
 
 <!-- Exclude posts that are disabled -->
-{% assign posts = unfiltered_posts | where_exp: "post", "post.published != false" %}
+{% assign posts = posts | where_exp: "post", "post.published != false" %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">

@@ -15,7 +15,7 @@ published: false
 If you have a computer it's obvious you store your birthday photos, videos and project files on the disk drive. If your drive would get erased, you would probably regret not having a copy of it. All those memories of you wearing those funny sox would be lost forever. All those things represent everything we did over time, where we've been and what we wore. It is valuable to us, not just personally, but professionally as well. For some their computer, their phone is where they store all that information, losing it would spell a catastrophe. It did happen to me and I recovered from it using data clouds.
 
 <p align="center">
-<img src="assets/images/federica-galli-449563-unsplash.jpg">
+    <img src="assets/images/federica-galli-449563-unsplash.jpg">
 </p>
 
 I was messing with a project, which required me to load the virtual image to the SDcard. The card had to be erased and since I had trouble with my Macintosh, I tried with Linux. Booted from a USB stick it promised to be quick indeed. Once G-Parted was opened, I glanced at Sheldon from the Big Bang Theory proposing to Amy. The confirmation box appeared, pressed enter not even reading the text, quickly returning my attention to Amy.
