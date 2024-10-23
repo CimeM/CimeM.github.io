@@ -14,13 +14,6 @@
     {% include_cached masthead.html %}
     
 
-    <div id="password-protection">
-      <p>This page is password protected. Please enter the password to view the content.</p>
-      <input type="password" id="password-input">
-      <button onclick="checkPassword()">Submit</button>
-    </div>
-    
-    
     <script>
     function checkPassword() {
       var password = document.getElementById("password-input").value;
@@ -33,8 +26,24 @@
     }
     </script>
 
+    <style>
+      input {
+        border: 2px solid #007BFF; /* Change color as needed */
+        background-color: #f0f8ff; /* Light background color */
+        padding: 10px; 
+        border-radius: 10px; 
+      }
+    </style>
+
     <div class="initial-content">
       <div id="main" role="main">
+
+        <div id="password-protection">
+          <p>This page is password protected. Please enter the password to view the content:</p>
+          <input type="password" id="password-input">
+          <button onclick="checkPassword()">Submit</button>
+        </div>
+
         <div id="protected-content" style="display: none;">
           {{ content }}
           {% include after-content.html %}
