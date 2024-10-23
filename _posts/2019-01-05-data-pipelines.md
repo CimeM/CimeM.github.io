@@ -20,11 +20,12 @@ Making automated jobs is almost synonymous to making a data pipeline. Not only d
 ![alt text](assets/images/data_pipe.jpg)
 
 
-Handling data flow is not an easy task and does involve quite a bit of software. It is also important to build it in a way, that it will be able to handle the given load and deliver correct data to the customer. 
+Handling data flow is not an easy task and does involve quite a bit of software. It is also important to build it in a way, that it will be able to handle the given load and deliver correct data to the customer.
 
-The key objective is to create a system that will connect data generators, data consumers and provide an interface to actuators. While doing that job, it will also include storage optimization and actuator utilization. 
+The key objective is to create a system that will connect data generators, data consumers and provide an interface to actuators. While doing that job, it will also include storage optimization and actuator utilization.
 
 The project consists of:
+
 * Sensors
 * Flask Microservice - Python-based API for making a data intersection
 * Graphite - a database that stores all the data and allows data reduction 
@@ -34,6 +35,7 @@ The project consists of:
 * Notifications - an alert system that warns users of any anomalies
 
 The reasons for making the project are several:
+
 * How can we operate the system, so that we save on resources
 * How can we measure the cost and effectiveness of the system
 * How can we distribute energy, so that it suits our needs and still provides ways to save on resources

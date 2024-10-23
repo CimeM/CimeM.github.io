@@ -25,9 +25,10 @@ Is the “mask” which we also call the user interface. These are graphical rep
 The Controller:
 Stands between the View and the Model. It is responsible for acquiring the data from the Model and display it onto the View. Controller is responsible for the information that is going to be displayed. Controller prepares the data to be displayed.
 
-![](https://dl.dropboxusercontent.com/s/argf4b0dtchca4r/MVC.png)
+![MVC](https://dl.dropboxusercontent.com/s/argf4b0dtchca4r/MVC.png)
 
 The trick is to recognise what each section is for and also how they communicate:
+
 - The controller can always talk to the model
 
 - Controller can also talk directly to the View
@@ -43,7 +44,6 @@ The trick is to recognise what each section is for and also how they communicate
 - Model uses Radio station model. -> broadcasts info to anyone
 
 - Controller can tune in to the Model’s radio station.
-
 
 The purpose is not only to sort the code, but also making the code more bug prone. Also it enables easy and fast upgrades.
 

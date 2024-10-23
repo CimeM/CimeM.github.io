@@ -15,7 +15,6 @@ In this lesson, you create the main screen of the Drawing app. You will create a
 
 ![](https://dl.dropboxusercontent.com/s/93yk6smi11d4s35/finalAppplusDrawing.png)
 
-
 Learning Objectives:
 
 - Create a single view app
@@ -32,29 +31,28 @@ Create a single view project in Xcode (File>New Project). Name it Drawing app.
 
 Having Cocoapods installed, you can open the terminal and go to the folder your app is saved.
 
-{% highlight C %}
+``` C
 cd /Documents/iOS/drawingApp/
 vi Podfile
-{% endhighlight %}
+```
 
 Vim editor will let you edit the file when pressing letter "i" (insert), insert the text:
 
-
-{% highlight C %}
+``` C
 platform :ios, '9.0'
 target 'drawingApp' do
     use_frameworks!
     pod 'TouchDraw', '~> 1.2'
 end
-{% endhighlight %}
+```
 
 then just install the pods with:
 
-{% highlight C %}
+``` C
 
 pod install
 
-{% endhighlight %}
+```
 
 That will take a minute or two.
 Then just close the project in Xcode and open the project in the folder with suffix:   .xcworkspace
@@ -68,27 +66,26 @@ In xcode, open ViewController.swift.
 
 At the beginning include the pod:
 
-{% highlight C %}
+``` C
 
 import TouchDraw
 
-{% endhighlight %}
+```
 
 At the beginning of the View controller you add an outlet to the drawing UIView.:
 
-{% highlight C %}
+``` C
 
 class ViewController: UIViewController, TouchDrawViewDelegate {
     @IBOutlet var drawView: TouchDrawView!
 
-{% endhighlight %}
+```
 
 You see that we added TouchDrawViewDelegate protocol conformation as well.
 
-
 Add aditional methods to the ViewController class to conform to the DelegateProtocol:
 
-{% highlight C %}
+``` C
 
 // MARK: - TouchDrawViewDelegate
     func undoEnabled() {}
@@ -98,7 +95,7 @@ Add aditional methods to the ViewController class to conform to the DelegateProt
     func clearEnabled() {}
     func clearDisabled(){}
 
-{% endhighlight %}
+```
 
 The next step is to add a UIView to the Storyboard. Open the Storyboard and find UIView from the object library on the right side. (Alternatively, choose View > Utilities > Show Object Library.)
 
@@ -126,7 +123,7 @@ With your mouse you can drag onto the white field and you will draw your first s
 
 Create methods into the main ViewController class for drawing onto the canvas:
 
-{% highlight C %}
+``` C
 
     func randomColor() -> UIColor {
             let r = CGFloat(random() % 255) / 255
@@ -135,8 +132,7 @@ Create methods into the main ViewController class for drawing onto the canvas:
             return UIColor(red: r, green: g, blue: b, alpha: 1.0)
     }
 
-{% endhighlight %}
-
+```
 
 Adding navigation Bar with buttons:
 
@@ -146,12 +142,11 @@ You will end up with automatically created outlet:
 
 ![](https://dl.dropboxusercontent.com/s/pt2otk95brg5rxb/drawViewOutlet.png)
 
-
-{% highlight C %}
+``` C
 
  @IBOutlet var navBar: UINavigationBar!;
 
-{% endhighlight %}
+```
 
 Then move into the viewDidLoad method and call:
 
@@ -161,7 +156,7 @@ also add the delegate:
 
 Your viewDidLoad method looks like this:
 
-{% highlight C %}
+``` C
 
 override func viewDidLoad() {
         super.viewDidLoad()
@@ -169,12 +164,11 @@ override func viewDidLoad() {
         drawView.delegate = self
     }
 
-{% endhighlight %}
-
+```
 
 move down to the end of the class and define the method:
 
-{% highlight C %}
+``` C
 
 func navbuttonsSetup() {
 
@@ -193,13 +187,11 @@ func navbuttonsSetup() {
 
     }
 
-{% endhighlight %}
-
-
+```
 
 Under that method you also need to define the button methods:
 
-{% highlight C %}
+``` C
 
     func done(){
         self.performSegueWithIdentifier("unwindToTranslatorVC", sender: self)
@@ -220,7 +212,7 @@ Under that method you also need to define the button methods:
         drawView.redo()
     }
 
-{% endhighlight %}
+```
 
 MARK: Compile the app and you should notice the navigation bar at the top.
 You should be able to use undo/redo buttons
@@ -239,19 +231,18 @@ The first button should be positioned on the left side. All next buttons are the
 Setting the background image to the button will resize it. You have to resize it by hand. Hold shift, so proportions will remain the same. You will end up with the button with the size: 37x68
 ![](https://dl.dropboxusercontent.com/s/qtokjzryfsaeicn/buttonsAddedAndProportions.png)
 
-
 At the top, add default color:
 
-{% highlight C %}
+``` C
 
 var localColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
 @IBOutlet var colorButton: UIButton!
 
-{% endhighlight %}
+```
 
 At the bottom of the class add:
 
-{% highlight C %}
+``` C
 
 @IBAction func penButton(sender: UIButton) {
         drawView.setColor(localColor)
@@ -287,7 +278,7 @@ At the bottom of the class add:
 
     }
 
-{% endhighlight %}
+```
 
 Add this actions by control-dragging from the buttons to the main class: View Controller. Don't forget to connect the colour button outlet at the top!
 

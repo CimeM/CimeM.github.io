@@ -31,24 +31,24 @@ Install 'Bolts' pod
 Open Terminal app and change directory to your folder where you saved your app.
 When located in that directory type:
 
-{% highlight C %}
+``` C
 
 pod init
 
-{% endhighlight %}
+```
 
 
 Then edit the pod file with
 
-{% highlight C %}
+``` C
 
 vi Podfile
 
-{% endhighlight %}
+```
 
 Insert necessary text, so your pod file will contain this:
 
-{% highlight C %}
+``` C
 
 target 'facebookLoginTest' do
 frameworks
@@ -56,16 +56,16 @@ frameworks
   pod 'Bolts'
 end
 
-{% endhighlight %}
+```
 
 
 Install pods by:
 
-{% highlight C %}
+``` C
 
 pod install
 
-{% endhighlight %}
+```
 
 When finished, open the .xcworkspace file with Xcode.
 
@@ -98,12 +98,12 @@ Adding a header file connecting frameworks to your code is necessary.
 
 Header file:
 
-{% highlight C %}
+``` C
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-{% endhighlight %}
+```
 
 MARK : Compile and load the app to your emulator. The project should compile with the frameworks installed.
 
@@ -113,7 +113,7 @@ In this final step, we will configure our iOS app.
 Open 'AppDelegate.swift' and configure it in a way that you will end up with this:
 
 
-{% highlight C %}
+``` C
 
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -127,12 +127,12 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 
     }
 
-{% endhighlight %}
+```
 
 
 Now, navigate to 'ViewController.swift' file and replace its content with:
 
-{% highlight C %}
+``` C
 
 import UIKit
 
@@ -190,7 +190,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 
 }
 
-{% endhighlight %}
+```
 
 MARK: Compile the code, the emulator will display a facebook button. Log in using your account information, and observe the log output.
 

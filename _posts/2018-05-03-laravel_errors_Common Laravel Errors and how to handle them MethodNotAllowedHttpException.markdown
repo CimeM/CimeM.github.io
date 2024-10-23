@@ -95,7 +95,7 @@ The one that did not work:
           </div>
         </div> <!-- row -->
       </form>
-{% endhighlight %}
+```
 Working form:
 {% highlight html %}
     <form id="form1" action="<!-- url('phonebook') -->" method="post" autocomplete="off">
@@ -137,7 +137,7 @@ Working form:
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-{% endhighlight %}
+```
 
 Later in the process of writing this post, I realized, that my mistake was in the forth line within the form.
 I forgot to close the input field and that caused my form to freak out and throw the controller into rejection mode.
