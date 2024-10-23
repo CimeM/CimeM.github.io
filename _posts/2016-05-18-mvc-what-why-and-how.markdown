@@ -4,7 +4,7 @@ current: post
 cover:  assets/images/rawpixel-com-395554-unsplash.jpg
 navigation: True
 title: What is MVC and how to use it
-date: 2018-02-07 10:00:00
+date: 2018-02-07
 tags: software
 class: post-template
 subclass: 'post tag-getting-started MVC swift development code software'
