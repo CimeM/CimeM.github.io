@@ -30,11 +30,9 @@ This one was just for the sake of reliable connection. A single cable was instal
 ***Step 2: A different data destination***
 A single glance to the code revealed how simple the configuration is. I just needed to change the destination IP, compile and download the code and carefully return the Arduino to its original place.
 
-
 ### Hardware
 
 ![Hardware trio](assets/images/arduino-proj-temp.png)
-
 
 The trio on the image is (from left) Arduino nano (Atmega 328P), ETH shield (ENC 28J60) and a custom voltage divider board.
 

@@ -15,7 +15,7 @@ In previous posts, I have mentioned a way to establish hardware and software for
 
 As you may know, Arduino boards have limited amount of space. Running in infinite loops by default, the microcontroller can run out of data very soon. This memory leak populates the memory, that is crucial for its operation. Regarding this, a reset button may be pushed every now and then, so that the memory is freed and the board begins its process from the beginning. It is needless to say that pushing a button every 24 hours seems like a scene from an episode of Lost. Luckily there is a way to do this, so the microcontroller can reset itself periodically.
 
-```C
+``` C
 long lastReadingTime = 0;
 
 void setup() {

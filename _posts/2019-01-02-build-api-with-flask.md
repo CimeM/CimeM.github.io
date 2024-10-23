@@ -17,7 +17,7 @@ Most common API communication protocol is Representational State Transfer (REST)
 
 In this post, we are going to build our API using Flask Microframework for python.
 
-```Python
+``` python
 from flask import Flask, request
 from flask_restful import Resource, API
 

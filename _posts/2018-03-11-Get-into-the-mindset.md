@@ -133,9 +133,6 @@ This financial coach will train you up to a financial ninja. With the help of Da
 This one is for the young ones. 99 principles for 20-somethings. Aimed at high school graduates, teaching them about finance in 8-step programme. This book came into existence by experience as Cary wanted to teach her children how to behave with money.
 
 
-
-
-
 -  Redit pages
 ------
 <i>Internet is the new medium where we get our information. if you fancy reddit articles this one is for you.</i>

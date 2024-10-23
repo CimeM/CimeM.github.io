@@ -18,4 +18,3 @@ We dove deep into data visualization where the red line of the meetup was about 
 The author of the book explains how we can emphasize our key points in our presentation and make a better impact by leading our listeners through the narrative. Presenting as a story has many benefits over a long and tedious email report.
 
 Thanks to Datawrapper and Lisa Charlotte Rost for hosting the meetup! Check out her blog and the company she is involved in [Datawrapper](https://www.blog.datawrapper.de/).
-
