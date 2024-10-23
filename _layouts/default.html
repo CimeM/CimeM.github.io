@@ -12,11 +12,33 @@
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
+    
+
+    <div id="password-protection">
+      <p>This page is password protected. Please enter the password to view the content.</p>
+      <input type="password" id="password-input">
+      <button onclick="checkPassword()">Submit</button>
+    </div>
+    
+    
+    <script>
+    function checkPassword() {
+      var password = document.getElementById("password-input").value;
+      if (password === "9953") {
+        document.getElementById("password-protection").style.display = "none";
+        document.getElementById("protected-content").style.display = "block";
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    }
+    </script>
 
     <div class="initial-content">
       <div id="main" role="main">
-        {{ content }}
-        {% include after-content.html %}
+        <div id="protected-content" style="display: none;">
+          {{ content }}
+          {% include after-content.html %}
+        </div>
       </div>
     </div>
 
