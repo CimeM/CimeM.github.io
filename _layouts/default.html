@@ -14,8 +14,10 @@
     {% include_cached masthead.html %}
 
     <div class="initial-content">
-      {{ content }}
-      {% include after-content.html %}
+      <div id="main" role="main">
+        {{ content }}
+        {% include after-content.html %}
+      </div>
     </div>
 
     {% if site.search == true %}
