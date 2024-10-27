@@ -17,12 +17,58 @@
     <script>
     function checkPassword() {
       var password = document.getElementById("password-input").value;
-      if (password === "9953") {
-        document.getElementById("password-protection").style.display = "none";
-        document.getElementById("protected-content").style.display = "block";
-      } else {
-        alert("Incorrect password. Please try again.");
+      var encryptedContent = document.getElementById("protected-content").textContent.trim();
+      
+      decryptContent(encryptedContent, password)
+        .then(decryptedContent => {
+          console.log("Decryption successful");
+          document.getElementById('password-protection').style.display = 'none';
+          document.getElementById('protected-content').innerHTML = decryptedContent;
+          document.getElementById('protected-content').style.display = 'block';
+        })
+        .catch(error => {
+          console.error("Decryption failed:", error);
+          alert("Incorrect password or invalid content. Please try again.");
+        });
+    }
+    
+
+    function decryptContent(encryptedContent, password) {
+      
+      // Decode the base64 encoded content
+      let encryptedBytes;
+      try {
+        encryptedBytes = atob(encryptedContent);
+      } catch (error) {
+        throw new Error("Invalid encrypted content");
       }
+      
+      // Extract IV and ciphertext
+      const iv = encryptedBytes.slice(0, 16);
+      const ciphertext = encryptedBytes.slice(16);
+      
+      // Convert password to key
+      const keyBytes = new TextEncoder().encode(password.padEnd(32, '\0').slice(0, 32));
+      
+      // Import the key
+      return crypto.subtle.importKey(
+        "raw",
+        keyBytes,
+        { name: "AES-CBC" },
+        false,
+        ["decrypt"]
+      ).then(key => {
+        // Decrypt the content
+        return crypto.subtle.decrypt(
+          { name: "AES-CBC", iv: new Uint8Array(iv.split('').map(c => c.charCodeAt(0))) },
+          key,
+          new Uint8Array(ciphertext.split('').map(c => c.charCodeAt(0)))
+        );
+      }).then(decryptedBytes => {
+        // Convert decrypted bytes to text
+        return new TextDecoder().decode(decryptedBytes);
+      });
+          
     }
     </script>
 
@@ -46,9 +92,9 @@
         </div>
 
         <div id="protected-content" style="display: none;">
-          {{ content }}
-          {% include after-content.html %}
+          {{ content | escape }}
         </div>
+        {% include after-content.html %}
       </div>
     </div>
 
