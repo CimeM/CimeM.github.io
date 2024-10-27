@@ -1,104 +1,96 @@
----
----
-
 <!doctype html>
 {% include copyright.html %}
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
     
-
     <script>
-    function checkPassword() {
-      var password = document.getElementById("password-input").value;
-      // Get the encrypted content
-      var encodedContent = document.getElementById("protected-content").innerHTML.trim();
-      
-      // Decode the HTML entities
-      var decodedContent = decodeHTMLEntities(encodedContent);
-      
-      // Remove <p> tags if present
-      var encryptedContent = decodedContent.replace(/<\/?p>/g, '').trim();
+    // Store the encrypted content in a JavaScript variable
+    var rawEncryptedContent = `{{ content | escape | replace: "'", "\\'" }}`;
 
-      // Log to verify the content
-      console.log("Encrypted content:", encryptedContent);
-      
-      decryptContent(encryptedContent, password)
-        .then(decryptedContent => {
-          console.log("Decryption successful");
-          document.getElementById('password-protection').style.display = 'none';
-          document.getElementById('protected-content').innerHTML = decryptedContent;
-          document.getElementById('protected-content').style.display = 'block';
-        })
-        .catch(error => {
-          console.error("Decryption failed:", error);
-          alert("Incorrect password or invalid content. Please try again.");
-        });
-    }
-    
-    // Function to decode HTML entities
     function decodeHTMLEntities(text) {
       var textArea = document.createElement('textarea');
       textArea.innerHTML = text;
       return textArea.value;
     }
 
+    function checkPassword() {
+      var password = document.getElementById("password-input").value;
+      var decodedContent = decodeHTMLEntities(rawEncryptedContent);
+      var trimmedContent = decodedContent.replace(/<\/?[^>]+(>|$)/g, "").replace(/‘/g, "").replace(/’/g, "").trim();
+      var decryptedContent = decryptContent(trimmedContent, password);
+      
+      if (decryptedContent) {
+        console.log("Decryption successful");
+        document.getElementById('password-protection').style.display = 'none';
+        document.getElementById('protected-content').innerHTML = decryptedContent;
+        document.getElementById('protected-content').style.display = 'block';
+      } else {
+        console.log("Decryption failed");
+        alert("Incorrect password or invalid encrypted content. Please try again.");
+      }
+    }
+
+
     function decryptContent(encryptedContent, password) {
-      // Decode the base64 encoded content
-      let encryptedBytes;
       try {
-        encryptedBytes = atob(encryptedContent);
-      } catch (error) {
-        console.error("Base64 decoding failed:", error);
-        throw new Error("Invalid encrypted content: Base64 decoding failed");
-      }
-      
-      if (encryptedBytes.length < 16) {
-        throw new Error("Invalid encrypted content: Content too short");
-      }
-      
-      // Extract IV and ciphertext
-      const iv = encryptedBytes.slice(0, 16);
-      const ciphertext = encryptedBytes.slice(16);
-      
-      // Convert password to key
-      const keyBytes = new TextEncoder().encode(password.padEnd(32, '\0').slice(0, 32));
-      
-      // Import the key
-      return crypto.subtle.importKey(
-        "raw",
-        keyBytes,
-        { name: "AES-CBC" },
-        false,
-        ["decrypt"]
-      ).then(key => {
-        // Decrypt the content
-        return crypto.subtle.decrypt(
-          { name: "AES-CBC", iv: new Uint8Array(iv.split('').map(c => c.charCodeAt(0))) },
+        // Ensure encryptedContent is not empty
+        if (!encryptedContent) {
+          console.error("Encrypted content is empty");
+          return null;
+        }
+
+        // Create key from password
+        const key = CryptoJS.enc.Utf8.parse(password.padEnd(32, '\0').slice(0, 32));
+
+        // Decode the base64 content
+        const ciphertext = CryptoJS.enc.Base64.parse(encryptedContent);
+
+        // Extract IV (first 16 bytes)
+        const iv = ciphertext.clone();
+        iv.sigBytes = 16;
+        iv.clamp();
+
+        // Extract actual ciphertext
+        const actualCiphertext = ciphertext.clone();
+        actualCiphertext.words.splice(0, 4); // remove first 4 words (16 bytes)
+        actualCiphertext.sigBytes -= 16;
+
+        // Decrypt
+        const decrypted = CryptoJS.AES.decrypt(
+          { ciphertext: actualCiphertext },
           key,
-          new Uint8Array(ciphertext.split('').map(c => c.charCodeAt(0)))
+          { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }
         );
-      }).then(decryptedBytes => {
-        // Convert decrypted bytes to text
-        return new TextDecoder().decode(decryptedBytes);
-      }).catch(error => {
-        console.error("Decryption failed:", error);
-        throw new Error("Decryption failed: " + error.message);
-      });
-    }  
-    
+
+        // Convert to UTF-8 string
+        const decryptedStr = decrypted.toString(CryptoJS.enc.Utf8);
+
+        // Check if the decrypted string is empty or invalid
+        if (!decryptedStr || decryptedStr.trim().length === 0) {
+          console.error("Decryption resulted in empty or invalid string");
+          return null;
+        }
+
+        return decryptedStr;
+      } catch (error) {
+        console.error("Decryption error:", error.message);
+        return null;
+      }
+    }
     </script>
 
     <style>
       input {
-        border: 2px solid #007BFF; /* Change color as needed */
-        background-color: #f0f8ff; /* Light background color */
+        border: 2px solid #007BFF;
+        background-color: #f0f8ff;
         padding: 10px; 
         border-radius: 10px; 
       }
@@ -106,7 +98,6 @@
 
     <div class="initial-content">
       <div id="main" role="main">
-
         <div id="password-protection">
           <p>This page is password protected. Please enter the password to view the content.</p>
           <p>If you don't have the password, contact me.</p>
@@ -115,7 +106,7 @@
         </div>
 
         <div id="protected-content" style="display: none;">
-          {{ content | escape }}
+          {{ content }}
         </div>
         {% include after-content.html %}
       </div>
