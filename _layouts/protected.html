@@ -12,6 +12,22 @@
     {% include_cached masthead.html %}
     
     <script>
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+          name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+          var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+          var results = regex.exec(location.search);
+          return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+
+      // Set the password from the URL parameter
+      window.onload = function() {
+          var passwordFromUrl = getUrlParameter('password');
+          if (passwordFromUrl) {
+              document.getElementById('password-input').value = passwordFromUrl;
+          }
+      };
+
     // Store the encrypted content in a JavaScript variable
     var rawEncryptedContent = `{{ content | escape | replace: "'", "\\'" }}`;
 
