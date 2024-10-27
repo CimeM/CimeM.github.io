@@ -17,7 +17,17 @@
     <script>
     function checkPassword() {
       var password = document.getElementById("password-input").value;
-      var encryptedContent = document.getElementById("protected-content").textContent.trim();
+      // Get the encrypted content
+      var encodedContent = document.getElementById("protected-content").innerHTML.trim();
+      
+      // Decode the HTML entities
+      var decodedContent = decodeHTMLEntities(encodedContent);
+      
+      // Remove <p> tags if present
+      var encryptedContent = decodedContent.replace(/<\/?p>/g, '').trim();
+
+      // Log to verify the content
+      console.log("Encrypted content:", encryptedContent);
       
       decryptContent(encryptedContent, password)
         .then(decryptedContent => {
@@ -32,15 +42,25 @@
         });
     }
     
+    // Function to decode HTML entities
+    function decodeHTMLEntities(text) {
+      var textArea = document.createElement('textarea');
+      textArea.innerHTML = text;
+      return textArea.value;
+    }
 
     function decryptContent(encryptedContent, password) {
-      
       // Decode the base64 encoded content
       let encryptedBytes;
       try {
         encryptedBytes = atob(encryptedContent);
       } catch (error) {
-        throw new Error("Invalid encrypted content");
+        console.error("Base64 decoding failed:", error);
+        throw new Error("Invalid encrypted content: Base64 decoding failed");
+      }
+      
+      if (encryptedBytes.length < 16) {
+        throw new Error("Invalid encrypted content: Content too short");
       }
       
       // Extract IV and ciphertext
@@ -67,9 +87,12 @@
       }).then(decryptedBytes => {
         // Convert decrypted bytes to text
         return new TextDecoder().decode(decryptedBytes);
+      }).catch(error => {
+        console.error("Decryption failed:", error);
+        throw new Error("Decryption failed: " + error.message);
       });
-          
-    }
+    }  
+    
     </script>
 
     <style>
