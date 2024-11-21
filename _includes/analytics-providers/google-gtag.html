@@ -4,9 +4,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+  {% assign cleaned_url = site.url | replace: "https://", "" | replace: "http://", "" | remove: "index.html" | remove: ".html" | remove_first: "/" | remove: "/" %}
   gtag('config', '{{ site.analytics.google.tracking_id }}', {
-    'cookie_domain': '{{ site.url }}',
+    'cookie_domain': '{{ cleaned_url }}',
     'cookie_flags': 'SameSite=None;Secure'
 });
 </script>
