@@ -1,8 +1,8 @@
-FROM ruby:3.1
+FROM ruby:4.0-slim
 
 WORKDIR /app
 
-COPY Gemfile ./
+COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
 COPY . .

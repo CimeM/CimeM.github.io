@@ -1,15 +1,116 @@
-<!-- Google Tag Manager -->
-<script async src="/assets/js/gtag.js"></script>
+<section id="analytics-consent" class="analytics-consent" role="region" aria-labelledby="analytics-consent-title" hidden>
+  <h2 id="analytics-consent-title">Analytics preferences</h2>
+  <p>
+    Allow Google Analytics to measure page visits, reading engagement, and traffic sources.
+    Analytics stays off unless you accept.
+    <a href="{{ '/privacy/' | relative_url }}">Privacy details</a>.
+  </p>
+  <div class="analytics-consent__actions">
+    <button class="btn btn--primary" id="analytics-consent-accept" type="button">Accept analytics</button>
+    <button class="btn" id="analytics-consent-reject" type="button">Reject</button>
+  </div>
+</section>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  {% assign cleaned_url = site.url | replace: "https://", "" | replace: "http://", "" | remove: "index.html" | remove: ".html" | remove_first: "/" | remove: "/" %}
-  gtag('config', '{{ site.analytics.google.tracking_id }}', {
-    'cookie_domain': '{{ cleaned_url }}',
-    'cookie_flags': 'SameSite=None;Secure'
-});
+  (function () {
+    var consentKey = 'analytics-consent';
+    var measurementId = '{{ site.analytics.google.tracking_id }}';
+    var banner = document.getElementById('analytics-consent');
+    var acceptButton = document.getElementById('analytics-consent-accept');
+    var rejectButton = document.getElementById('analytics-consent-reject');
+
+    function readConsent() {
+      try {
+        return localStorage.getItem(consentKey);
+      } catch (error) {
+        console.error('Unable to read analytics consent from local storage.', error);
+        return null;
+      }
+    }
+
+    function saveConsent(value) {
+      try {
+        localStorage.setItem(consentKey, value);
+      } catch (error) {
+        console.error('Unable to save analytics consent to local storage.', error);
+      }
+    }
+
+    function updateGoogleConsent(analyticsStorage) {
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          analytics_storage: analyticsStorage,
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+      }
+    }
+
+    function enableAnalytics() {
+      window['ga-disable-' + measurementId] = false;
+
+      if (window.analyticsTagInitialized) {
+        updateGoogleConsent('granted');
+        return;
+      }
+
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', measurementId, {
+        send_page_view: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+      window.analyticsTagInitialized = true;
+
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(measurementId);
+      document.head.appendChild(script);
+    }
+
+    acceptButton.addEventListener('click', function () {
+      saveConsent('granted');
+      banner.hidden = true;
+      enableAnalytics();
+    });
+
+    rejectButton.addEventListener('click', function () {
+      saveConsent('denied');
+      window['ga-disable-' + measurementId] = true;
+      updateGoogleConsent('denied');
+      banner.hidden = true;
+    });
+
+    var settingsButton = document.getElementById('manage-analytics-consent');
+    if (settingsButton) {
+      settingsButton.addEventListener('click', function () {
+        banner.hidden = false;
+        acceptButton.focus();
+      });
+    }
+
+    var savedConsent = readConsent();
+    if (savedConsent === 'granted') {
+      enableAnalytics();
+    } else if (savedConsent !== 'denied') {
+      banner.hidden = false;
+    }
+  })();
 </script>
-
-
-<!-- End Google Tag Manager -->

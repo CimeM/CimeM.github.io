@@ -7,3 +7,51 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.layout--post .page__inner-wrap {
+  @include breakpoint($large) {
+    float: none;
+    max-width: 72ch;
+    margin-inline: auto;
+  }
+}
+
+.layout--post .page__content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.analytics-consent {
+  position: fixed;
+  z-index: 1000;
+  inset-inline: 1rem;
+  bottom: 1rem;
+  max-width: 42rem;
+  margin-inline: auto;
+  padding: 1rem 1.25rem;
+  color: $text-color;
+  background: $background-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 12px rgba(#000, 0.2);
+
+  h2 {
+    margin-top: 0;
+    font-size: $type-size-4;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.analytics-consent__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
