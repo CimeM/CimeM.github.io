@@ -6,24 +6,18 @@ permalink: /about/
 
 # About Me
 
-I’m Martin, a dedicated DevOps Engineer with 9 years of experience in streamlining development and operations processes. My focus is on enhancing collaboration, automation, and efficiency in software delivery.
+Hi, this site is a collection of blog posts where I explored ideas and tried to showcase what I am doing over the years. I'm into many things in software, mainly  automation, tools and development.
 
-## Skills
+## Interests
 
-- **Infrastructure as Code**: Proficient in Terraform and Ansible.
-- **Containerization**: Experienced with Docker and Kubernetes.
-- **CI/CD**: Skilled in Azure Devops, GitLab CI/CD, and GitHub Actions.
-- **Cloud Platforms**: CNCF Certified Kubernetes Administrator; familiar with Azure, AWS and GCP, Cisco CCNA1 certificate.
-- **Monitoring**: Prometheus, Jaeger, Loki.
-
-## Key Achievements
-
-- **Microservices Migration**: Successfully led a project that improved deployment frequency by 40%.
-- **Cost Optimization**: Implemented auto-scaling solutions that reduced cloud costs by 25%.
+- **Infrastructure as Code**: Terraform and other IaC tools.
+- **Containerization**: container runtime environments like Kubernetes.
+- **CI/CD**: GitLab pipelines, and GitHub Actions.
+- **Certs**: CNCF Certified Kubernetes Administrator, Cisco CCNA1
 
 ## Continuous Learning
 
-I am passionate about staying current with industry trends, currently exploring GitOps and architecture challenges.
+I'm passionate about exploring new technologies and trends in tech. Trends and exploration.
 
 ## Contact
 
@@ -31,7 +25,3 @@ Feel free to reach out:
 
 - LinkedIn: [https://www.linkedin.com/in/martin-c-5b77914b/]
 - GitHub: [https://github.com/CimeM]
-
----
-
-I'm excited about the opportunity to contribute to innovative projects in the DevOps space!
