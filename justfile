@@ -3,14 +3,17 @@ default:
 
 install:
     bundle install
-    npm ci
 
 update: install
 
 upgrade:
     bundle update
-    npm update
     bundle exec jekyll build
+
+upgrade-js:
+    npm update
+    npm ci
+    bundle exec rake js
 
 build:
     bundle exec jekyll build
@@ -27,5 +30,6 @@ docker:
     docker build -t my-jekyll-site .
     docker run -p 4000:4000 -v $(pwd):/app my-jekyll-site
 
-js: install
+js:
+    npm ci
     bundle exec rake js

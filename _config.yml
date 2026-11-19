@@ -116,7 +116,6 @@ author:
   name             : "Martin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "DevOps engineer."
-  location         : "France"
   email            :
   links:
     - label: "Email"
